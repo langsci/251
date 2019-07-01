@@ -1,8 +1,3 @@
-# 251
-Rebecca L. Morley: Representational considerations in models of language change and stability
-
-
-
 # Representational considerations in models of language change and stability 
 
 ## Publication Info
@@ -17,7 +12,7 @@ Research in linguistics, as in most other scientific domains, is usually approac
 
 ## URL
 
-[Book page on langsci-press.org](http://langsci-press.org/catalog/book/51)
+[Book page on langsci-press.org](http://langsci-press.org/catalog/book/251)
 
 
 ## License
