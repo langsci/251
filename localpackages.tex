@@ -15,7 +15,7 @@
 %% to add additional information to the right of examples, uncomment the following line
 % \usepackage{jambox}
 %% if you want the source line of examples to be in italics, uncomment the following line
-% \renewcommand{\exfont}{\itshape}
+% % \renewcommand{\exfont}{\normalfont}
 \usepackage{langsci-optional}
 \usepackage{./langsci/styles/langsci-lgr}
  
@@ -29,5 +29,11 @@
 \usepackage{xunicode}
 \usepackage{./covington}
 % % % \usepackage{polyglossia}
+
+\usepackage{siunitx}
+\sisetup{output-decimal-marker={.},detect-weight=true, detect-family=true, detect-all, input-symbols={\%}, free-standing-units, input-open-uncertainty= , input-close-uncertainty= ,table-align-text-pre=false,uncertainty-separator={\,},group-digits=false,detect-inline-weight=math}
+\DeclareSIUnit[number-unit-product={}]{\percent}{\%}
+\makeatletter \def\new@fontshape{} \makeatother
+\robustify\bfseries % For detect weight to work
 
 \usepackage{langsci-gb4e}

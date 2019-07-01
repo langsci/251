@@ -207,28 +207,19 @@ happen to be produced in a biasing context are also subject to a force
 that lengthens them during production. Model C, however, the \textsc{state}
 model, is not theoretically consistent. 
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{Single-Category Model Space\label{tab: Model Comparison-1}}
 
-\noindent\begin{minipage}[t]{1\columnwidth}%
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline 
- & \multicolumn{2}{c||}{} & \multicolumn{2}{c||}{} & Stable & Consistent\tabularnewline
-\hline 
-\hline 
+\begin{tabular}{ccccccc}
+\lsptoprule
+ & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & Stable & Consistent\tabularnewline
+\midrule
 A & \textsc{Process} & $\alpha(1+x)$ & No Target & – & N & Y\tabularnewline
-\hline 
-\hline 
 B & \textsc{Process} & $\alpha(1+x)$ & Target & $\beta(N-x)$ & (Y) & Y\tabularnewline
-\hline 
-\hline 
 C & \textsc{State} & $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & N\tabularnewline
-\hline 
-\end{tabular}
-
-}%
-\end{minipage}
+\lspbottomrule
+\end{tabular}}%
 \end{table}
 
 In Model C, all tokens have a target at \emph{N}, but tokens produced
@@ -275,31 +266,18 @@ models, among others. However, these other models all contain a superset
 of the representational inconsistencies already described, and therefore
 are not included.}.
 
-\begin{table}[H]
+\begin{table}[h]
 \caption{2-Level Model Space\label{tab: Model Comparison}}
-
-\noindent\begin{minipage}[t]{1\columnwidth}%
 \resizebox{\textwidth}{!}{%
-\begin{tabular}{|c||c||c||c||c||c||c|}
-\hline 
- & \multicolumn{2}{c||}{biased} & \multicolumn{2}{c||}{non-biased} & Stable & Consistent\tabularnewline
-\hline 
-\hline 
+\begin{tabular}{ccccccc}
+\lsptoprule
+ & \multicolumn{2}{c}{biased} & \multicolumn{2}{c}{non-biased} & Stable & Consistent\tabularnewline\midrule
 D & \textsc{Process} & $\alpha(1+x)$ & Target & $\beta(N-x)$ & N & N\tabularnewline
-\hline 
-\hline 
 E & \textsc{2-State} & $\beta(N-x)$; $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & N\tabularnewline
-\hline 
-\hline 
 F & \textsc{Process+ State} & $\alpha(1+x)$; $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & N\tabularnewline
-\hline 
-\hline 
 G & \textsc{State} & $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & Y\tabularnewline
-\hline 
-\end{tabular}
-
-}%
-\end{minipage}
+\lspbottomrule
+\end{tabular}}%
 \end{table}
 
 Only two viable candidates emerge from the full set of models. A pure

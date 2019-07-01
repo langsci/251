@@ -6,21 +6,16 @@ the following parameter values were used:
 \begin{table}[H]
 
 \caption{Simulation parameter values}
-\begin{tabular}{|c|c|c|c|c|c|c|c|}
-\hline 
- & $\varepsilon$ & $\sigma_{error}$ & $\alpha$ & p & $\beta$ & $\sigma$ & N\tabularnewline
-\hline 
-\hline 
+\begin{tabular}{lScSSScc}
+\lsptoprule
+ & {$\varepsilon$} & {$\sigma_{\text{error}}$} & $\alpha$ & {p} & {$\beta$} & $\sigma$ & N\tabularnewline
+\midrule
 Baseline Model Ch. \ref{sec:The-Exemplar-Model} & (.3) & $\sigma$ & .1 & – & – & 2 & –\tabularnewline
-\hline 
 Model 1: Context-Free Ch. \ref{subsec:Model-1:-Context-Free} & .3 & $\sigma$ & .5$\sigma$ & – & – & 2 & –\tabularnewline
-\hline 
-Model 2: Context-Dependent (Gradient) Ch. \ref{subsec:Phrase-Final Lengthening} & .3 & $\sigma$ & .1 & .25 & – & 2 & –\tabularnewline
-\hline 
-Model 3: Context-Dependent (Discrete) Ch. \ref{subsec:Model-3:-Categorical} & .3 & $\sigma$ & – & .5 & – & 2 & –\tabularnewline
-\hline 
+Model 2: Context-Dep. (Gradient) Ch. \ref{subsec:Phrase-Final Lengthening} & .3 & $\sigma$ & .1 & .25 & – & 2 & –\tabularnewline
+Model 3: Context-Dep. (Discrete) Ch. \ref{subsec:Model-3:-Categorical} & .3 & $\sigma$ & – & .5 & – & 2 & –\tabularnewline
 Soft-Target Model Ch. \ref{subsec:Soft-Targets} & .3 & $\sigma$ & .1 & .25 & .6 & 2 & 50\tabularnewline
-\hline 
+\lspbottomrule
 \end{tabular}
 
 \end{table}
@@ -102,7 +97,7 @@ a low frequency and high frequency word is related to the difference
 in frequencies by the following formula: 
 
 \begin{equation}
-\frac{\Delta d_{e}}{log(f_{L})-log(f_{H})}=b\label{eq:log-linear}
+\frac{\Delta d_{e}}{\log(f_{L})-\log(f_{H})}=b\label{eq:log-linear}
 \end{equation}
 If speaker/listeners begin at birth with equal experience of all words
 – meaning, none –, then the differences in duration that accrue over
@@ -120,17 +115,17 @@ by:
 Combining (\ref{eq:log-linear}) and (\ref{eq:duration-diff}),
 
 \begin{equation}
-\delta_{n_{L}}-\delta_{n_{H}}=b[log(\frac{f_{L}}{f_{H}})]
+\delta_{n_{L}}-\delta_{n_{H}}=b[\log(\frac{f_{L}}{f_{H}})]
 \end{equation}
 Substituting in Eq. (\ref{eq:Reduction}):
 
 \begin{equation}
-1-(1-\alpha)^{n_{L}}-[1-(1-\alpha)^{n_{H}}]=b[log(\frac{f_{L}}{f_{H}})]
+1-(1-\alpha)^{n_{L}}-[1-(1-\alpha)^{n_{H}}]=b[\log(\frac{f_{L}}{f_{H}})]
 \end{equation}
 Simplifying:
 
 \begin{equation}
-(1-\alpha)^{n_{H}}-(1-\alpha)^{n_{L}}=b[log(\frac{f_{L}}{f_{H}})]\label{eq:reduction-to-freq}
+(1-\alpha)^{n_{H}}-(1-\alpha)^{n_{L}}=b[\log(\frac{f_{L}}{f_{H}})]\label{eq:reduction-to-freq}
 \end{equation}
 
 The higher the frequency of a given word, the more times it should
@@ -145,7 +140,7 @@ n_{f}=rlog(f)\label{eq:n-productions}
 Substituting (\ref{eq:n-productions}) into (\ref{eq:reduction-to-freq}):
 
 \begin{equation}
-(1-\alpha)^{rlog(f_{H})}-(1-\alpha)^{rlog(f_{L})}=b[log(\frac{f_{L}}{f_{H}})]\label{eq:boundary cond}
+(1-\alpha)^{rlog(f_{H})}-(1-\alpha)^{rlog(f_{L})}=b[\log(\frac{f_{L}}{f_{H}})]\label{eq:boundary cond}
 \end{equation}
 Assuming that it is possible to find values for $\alpha$ and \emph{r}
 that satisfy Eq. (\ref{eq:boundary cond}) for all frequencies, the
