@@ -80,7 +80,7 @@ mean
 \end{itemize}
 \item Repeat Step \ref{enu:step 2}
 \end{enumerate}
-%
+
 \end{minipage}}\caption{\label{fig:Baseline-Model-Specification}Baseline Model Specification}
 
 \end{figure}
@@ -142,17 +142,24 @@ by increasing the probability that a token will be chosen again with
 each biasing iteration. }.
 
 \begin{figure}[H]
-
-\subfloat[\label{fig:Basic-Iterative-Model}All Forces]{
-
-\includegraphics[width=0.25\textwidth]{figures/8000iterwithentrenchment.pdf}}\hfill{}\subfloat[\label{fig:NoEntrenchment}Without Entrenchment]{\includegraphics[width=0.25\textwidth]{figures/8000iternoentrenchment.pdf}
-
-}\hfill{}\subfloat[\label{fig:No-memory-decay:}Without Memory Decay]{\includegraphics[width=0.25\textwidth]{figures/8000iternomemory.pdf}
-
-}\caption{\label{fig:First Model param}Basic Iterative Model: Starting distribution
+    \begin{subfigure}[t]{.3\textwidth}
+        \includegraphics[width=\linewidth]{figures/8000iterwithentrenchment.pdf}
+        \caption{\label{fig:Basic-Iterative-Model}All Forces}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{.3\textwidth}
+        \includegraphics[width=\linewidth]{figures/8000iternoentrenchment.pdf}
+        \caption{\label{fig:NoEntrenchment}Without Entrenchment}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{.3\textwidth}
+        \includegraphics[width=\linewidth]{figures/8000iternomemory.pdf}
+        \caption{\label{fig:No-memory-decay:}Without Memory Decay}
+    \end{subfigure}
+% % % \subfigure[\label{fig:Basic-Iterative-Model}All Forces]{\includegraphics[width=0.25\textwidth]{figures/8000iterwithentrenchment.pdf}}\qquad
+% % % \subfigure[\label{fig:NoEntrenchment}Without Entrenchment]{\includegraphics[width=0.25\textwidth]{figures/8000iternoentrenchment.pdf}}\qquad
+% % % \subfigure[\label{fig:No-memory-decay:}Without Memory Decay]{\includegraphics[width=0.25\textwidth]{figures/8000iternomemory.pdf}}
+\caption{\label{fig:First Model param}Basic Iterative Model: Starting distribution
 (white); Distribution after 8000 iterations (black). Note that y-axis
-range in c) is about 10 times larger than in a) and b). }
-
+range in c) is about 10 times larger than in a) and b).}
 \end{figure}
 
 
@@ -266,11 +273,16 @@ individual token, and thus lowers the probability of selecting the
 daughter of any individual token, relative to the low-frequency category. 
 
 \begin{figure}[H]
-\centering{}\subfloat[\label{fig:HvL} 4:1 Token ratio]{
-
-\includegraphics[width=0.3\textwidth]{figures/FrequencyEffect.pdf}}\hfill{}\subfloat[\label{fig:Freq.EqualTokens}1:1 Token Ratio]{
-
-\includegraphics[width=0.3\textwidth]{figures/FrequencyEffectEqNums.pdf}}\caption{Simulation of Iterative Biasing for H(igh) frequency category versus
+\begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/FrequencyEffect.pdf}
+        \caption{\label{fig:HvL}4:1 Token ratio}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/FrequencyEffectEqNums.pdf}
+        \caption{\label{fig:Freq.EqualTokens}1:1 Token Ratio}
+    \end{subfigure}
+% % \centering{}\subfloat[\label{fig:HvL}4:1 Token ratio]{\includegraphics[width=0.3\textwidth]{figures/FrequencyEffect.pdf}}\hfill{}\subfloat[\label{fig:Freq.EqualTokens}1:1 Token Ratio]{\includegraphics[width=0.3\textwidth]{figures/FrequencyEffectEqNums.pdf}}
+\caption{Simulation of Iterative Biasing for H(igh) frequency category versus
 L(ow) frequency category}
 \end{figure}
 
@@ -383,15 +395,20 @@ iterations, versus 5,000 iterations.
 
 \begin{figure}[H]
 
-\begin{raggedright}
-\subfloat[1000 iterations]{\includegraphics[width=0.3\textwidth]{figures/1000iter.pdf}
+\begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/1000iter.pdf}
+        \caption{1000 iterations}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/5000iter.pdf}
+        \caption{5000 iterations}
+    \end{subfigure}
+    
+% % \subfloat[1000 iterations]{\includegraphics[width=0.3\textwidth]{figures/1000iter.pdf}}\hfill{}\subfloat[5000 iterations]{\includegraphics[width=0.3\textwidth]{figures/5000iter.pdf}}
 
-}\hfill{}\subfloat[5000 iterations]{\includegraphics[width=0.3\textwidth]{figures/5000iter.pdf}
-
-}\caption{\label{fig:End context mismatch}Observed distribution (800 tokens).
+\caption{\label{fig:End context mismatch}Observed distribution (800 tokens).
 White: productions in non-biasing context. Black: productions in biasing
-context. }
-\par\end{raggedright}
+context.}
 \end{figure}
 
 As expected, the same unboundedness problem arises as was seen in
@@ -432,11 +449,19 @@ in Chapter \ref{subsec:Model-3:-Nasalization}.
 
 \begin{figure}[H]
 
-\subfloat[\label{fig:binary-Starting-Distribution}Starting Distribution]{
+\begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/NasalizationStart.pdf}
+        \caption{\label{fig:binary-Starting-Distribution}Starting Distribution}
+    \end{subfigure}\hfill
+    \begin{subfigure}[t]{.45\textwidth}
+        \includegraphics[width=\linewidth]{figures/Nasalization1000iter.pdf}
+        \caption{\label{fig:binary-1000iter}1000 iterations}
+    \end{subfigure}
+% 
+% \subfloat[\label{fig:binary-Starting-Distribution}Starting Distribution]{
+% 
+% \includegraphics[width=0.3\textwidth]{figures/NasalizationStart.pdf}}\hfill{}\subfloat[\label{fig:binary-1000iter}1000 iterations]{\includegraphics[width=0.3\textwidth]{figures/Nasalization1000iter.pdf}}
 
-\includegraphics[width=0.3\textwidth]{figures/NasalizationStart.pdf}}\hfill{}\subfloat[\label{fig:binary-1000iter}1000 iterations]{\includegraphics[width=0.3\textwidth]{figures/Nasalization1000iter.pdf}
-
-}\caption{\label{fig:Context Mismatch Features}Quasi-binary feature. Two variants
+\caption{\label{fig:Context Mismatch Features}Quasi-binary feature. Two variants
 with equal contextual frequency.}
-
 \end{figure}
