@@ -3,18 +3,17 @@
 For each of the basic exemplar models for which simulations were run,
 the following parameter values were used:
 
-\begin{table}[H]
-
+\begin{table}[H]\footnotesize
 \caption{Simulation parameter values}
-\begin{tabular}{lScSSScc}
+\begin{tabular}{lS[table-format=1.1]cS[table-format=1.1]S[table-format=1.1]S[table-format=1.1]cc}
 \lsptoprule
  & {$\varepsilon$} & {$\sigma_{\text{error}}$} & $\alpha$ & {p} & {$\beta$} & $\sigma$ & N\tabularnewline
 \midrule
-Baseline Model \sectref{ch:The-Exemplar-Model} & (.3) & $\sigma$ & .1 & – & – & 2 & –\tabularnewline
-Model 1: Context-Free \sectref{subsec:Model-1:-Context-Free} & .3 & $\sigma$ & .5$\sigma$ & – & – & 2 & –\tabularnewline
-Model 2: Context-Dep. (Gradient) \sectref{subsec:Phrase-Final Lengthening} & .3 & $\sigma$ & .1 & .25 & – & 2 & –\tabularnewline
-Model 3: Context-Dep. (Discrete) \sectref{subsec:Model-3:-Categorical} & .3 & $\sigma$ & – & .5 & – & 2 & –\tabularnewline
-Soft-Target Model \sectref{subsec:Soft-Targets} & .3 & $\sigma$ & .1 & .25 & .6 & 2 & 50\tabularnewline
+Baseline Model (\chapref{ch:The-Exemplar-Model}) & (.3) & $\sigma$ & .1 & – & – & 2 & –\tabularnewline
+Model 1: Context-Free (\sectref{subsec:Model-1:-Context-Free}) & .3 & $\sigma$ & .5$\sigma$ & – & – & 2 & –\tabularnewline
+Model 2: Context-Dep. (Gradient) (\sectref{subsec:Phrase-Final Lengthening}) & .3 & $\sigma$ & .1 & .25 & – & 2 & –\tabularnewline
+Model 3: Context-Dep. (Discrete) (\sectref{subsec:Model-3:-Categorical}) & .3 & $\sigma$ & – & .5 & – & 2 & –\tabularnewline
+Soft-Target Model (\sectref{subsec:Soft-Targets}) & .3 & $\sigma$ & .1 & .25 & .6 & 2 & 50\tabularnewline
 \lspbottomrule
 \end{tabular}
 
@@ -135,12 +134,12 @@ of reduction, then the number of productions should also be proportional
 to log frequency. 
 
 \begin{equation}
-n_{f}=rlog(f)\label{eq:n-productions}
+n_{f}=\rlog(f)\label{eq:n-productions}
 \end{equation}
 Substituting (\ref{eq:n-productions}) into (\ref{eq:reduction-to-freq}):
 
 \begin{equation}
-(1-\alpha)^{rlog(f_{H})}-(1-\alpha)^{rlog(f_{L})}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:boundary cond}
+(1-\alpha)^{\rlog(f_{H})}-(1-\alpha)^{\rlog(f_{L})}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:boundary cond}
 \end{equation}
 Assuming that it is possible to find values for $\alpha$ and \emph{r}
 that satisfy Eq. (\ref{eq:boundary cond}) for all frequencies, the
@@ -154,7 +153,7 @@ lifetime (\emph{E}) average reduction is given by $\delta_{E_{f}}=1-(1-\alpha)^{
 which can be rewritten as:
 
 \begin{equation}
-\delta_{E_{f}}=1-(1-\alpha)^{4rlog(f)}
+\delta_{E_{f}}=1-(1-\alpha)^{4\rlog(f)}
 \end{equation}
 
 With the necessary constants, we can now determine the difference
@@ -199,12 +198,12 @@ to the inertia force. For the non-biased sub-category this equilibrium
 occurs under the following conditions:
 
 \begin{equation}
-\beta(\overline{x_{E}^{NB}}-N)=\varepsilon(\overline{x_{E}}-\overline{x_{E}^{NB}})\label{eq:xNB-state}
+\beta\left(\overline{x_{E}^{NB}}-N\right)=\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{NB}}\right)\label{eq:xNB-state}
 \end{equation}
 For the biased sub-category, equilibrium occurs when:
 
 \begin{equation}
-\alpha(\overline{x_{E}^{B}}-L)=\varepsilon(\overline{x_{E}}-\overline{x_{E}^{B}})\label{eq:xB-State}
+\alpha\left(\overline{x_{E}^{B}}-L\right)=\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{B}}\right)\label{eq:xB-State}
 \end{equation}
 Because the entrenchment force depends on the global mean, so too
 do the two equilibrium equations. In turn, the global mean can be
@@ -401,29 +400,29 @@ after entrenchment applies. After entrenchment, the means of each
 sub-distribution are given by:
 
 \begin{equation}
-\overline{x_{t}^{B}}^{\prime\prime}=\overline{x_{t}^{B}}^{\prime}-\varepsilon(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime})
+\overline{x_{t}^{B}}^{\prime\prime}=\overline{x_{t}^{B}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)
 \end{equation}
 
 \begin{equation}
-\overline{x_{t}^{NB}}^{\prime\prime}=\overline{x_{t}^{NB}}^{\prime}-\varepsilon(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime})
+\overline{x_{t}^{NB}}^{\prime\prime}=\overline{x_{t}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)
 \end{equation}
 Substituting into Eq. (\ref{eq:Model-B weight mean}), gives
 
 \begin{equation}
-\overline{x}_{t}^{''}=(1-p)[\overline{x_{t}^{NB}}^{\prime}-\varepsilon(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime})]+p[\overline{x_{t}^{B}}^{\prime}-\varepsilon(\overline{x}_{t}^{\prime}-\overline{x_{t}^{B}}^{\prime})]
+\overline{x}_{t}^{''}=(1-p)\left[\overline{x_{t}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)\right]+p\left[\overline{x_{t}^{B}}^{\prime}-\varepsilon\left(\overline{x}_{t}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)\right]
 \end{equation}
 Simplifying and collecting terms:
 
 \begin{equation}
-=\overline{x_{t}}^{\prime}-\varepsilon(1-p)(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime})-p\varepsilon(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime})
+=\overline{x_{t}}^{\prime}-\varepsilon(1-p)\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)-p\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)
 \end{equation}
 
 \begin{equation}
-=\overline{x_{t}}^{\prime}+\varepsilon(1-p)\overline{x_{t}^{NB}}^{\prime}-[\varepsilon(1-p)+p\varepsilon]\overline{x_{t}}^{\prime}+p\varepsilon\overline{x_{t}^{B}}^{\prime}
+=\overline{x_{t}}^{\prime}+\varepsilon(1-p)\overline{x_{t}^{NB}}^{\prime}-\left[\varepsilon(1-p)+p\varepsilon\right]\overline{x_{t}}^{\prime}+p\varepsilon\overline{x_{t}^{B}}^{\prime}
 \end{equation}
 
 \begin{equation}
-=\overline{x_{t}}^{\prime}-\varepsilon\overline{x_{t}}^{\prime}+\varepsilon[(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}]
+=\overline{x_{t}}^{\prime}-\varepsilon\overline{x_{t}}^{\prime}+\varepsilon\left[(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\right]
 \end{equation}
 The term $(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}$
 is equivalent to $\overline{x_{t}}^{\prime}$ by Eq (\ref{eq:Model-B weight mean}).
@@ -487,26 +486,26 @@ separation is defined as:
 And 
 
 \begin{equation}
-\overline{x_{E}^{B}}^{\prime\prime}=\overline{x_{E}^{B}}^{\prime}+\varepsilon(\overline{x_{E}}^{\prime}-\overline{x_{E}^{B}}^{\prime})
+\overline{x_{E}^{B}}^{\prime\prime}=\overline{x_{E}^{B}}^{\prime}+\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{B}}^{\prime}\right)
 \end{equation}
 
 \begin{equation}
-\overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{NB}}^{\prime}+\varepsilon(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime})
+\overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{NB}}^{\prime}+\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 Therefore, 
 
 \begin{equation}
-\overline{x_{E}^{B}}^{\prime\prime}-\overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}+\varepsilon(\overline{x_{E}}^{\prime}-\overline{x_{E}^{B}}^{\prime})-\varepsilon(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime})
+\overline{x_{E}^{B}}^{\prime\prime}-\overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}+\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{B}}^{\prime}\right)-\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 Collecting terms:
 
 \begin{equation}
-=\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}-\varepsilon(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime})
+=\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 and
 
 \begin{equation}
-\triangle\overline{x_{E}}^{\prime\prime}=(1-\varepsilon)(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime})
+\triangle\overline{x_{E}}^{\prime\prime}=(1-\varepsilon)\left(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 The observed separation at equilibrium depends on the separation due
 to prior model forces. From Eqs. (\ref{eq:Model-B B-Prime}) and (\ref{eq:Model-B NB-Prime}), 
