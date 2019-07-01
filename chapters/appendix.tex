@@ -115,17 +115,17 @@ by:
 Combining (\ref{eq:log-linear}) and (\ref{eq:duration-diff}),
 
 \begin{equation}
-\delta_{n_{L}}-\delta_{n_{H}}=b[\log(\frac{f_{L}}{f_{H}})]
+\delta_{n_{L}}-\delta_{n_{H}}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]
 \end{equation}
 Substituting in Eq. (\ref{eq:Reduction}):
 
 \begin{equation}
-1-(1-\alpha)^{n_{L}}-[1-(1-\alpha)^{n_{H}}]=b[\log(\frac{f_{L}}{f_{H}})]
+1-(1-\alpha)^{n_{L}}-[1-(1-\alpha)^{n_{H}}]=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]
 \end{equation}
 Simplifying:
 
 \begin{equation}
-(1-\alpha)^{n_{H}}-(1-\alpha)^{n_{L}}=b[\log(\frac{f_{L}}{f_{H}})]\label{eq:reduction-to-freq}
+(1-\alpha)^{n_{H}}-(1-\alpha)^{n_{L}}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:reduction-to-freq}
 \end{equation}
 
 The higher the frequency of a given word, the more times it should
@@ -140,7 +140,7 @@ n_{f}=rlog(f)\label{eq:n-productions}
 Substituting (\ref{eq:n-productions}) into (\ref{eq:reduction-to-freq}):
 
 \begin{equation}
-(1-\alpha)^{rlog(f_{H})}-(1-\alpha)^{rlog(f_{L})}=b[\log(\frac{f_{L}}{f_{H}})]\label{eq:boundary cond}
+(1-\alpha)^{rlog(f_{H})}-(1-\alpha)^{rlog(f_{L})}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:boundary cond}
 \end{equation}
 Assuming that it is possible to find values for $\alpha$ and \emph{r}
 that satisfy Eq. (\ref{eq:boundary cond}) for all frequencies, the
@@ -300,13 +300,13 @@ Collecting terms and simplifying:
 \end{equation}
 
 \begin{equation}
-=\frac{\alpha L}{\alpha+\varepsilon}-\frac{\beta N}{\beta+\varepsilon}+\varepsilon\overline{x_{E}}[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]
+=\frac{\alpha L}{\alpha+\varepsilon}-\frac{\beta N}{\beta+\varepsilon}+\varepsilon\overline{x_{E}}\left[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}\right]
 \end{equation}
 The change in sub-category separation as a function of changing \emph{p}
 is thus given by:
 
 \begin{equation}
-\frac{\partial\Delta\overline{x_{E}}}{\partial p}=\frac{\partial\overline{x_{E}}}{\partial p}\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]\label{eq:Model G-sep}
+\frac{\partial\Delta\overline{x_{E}}}{\partial p}=\frac{\partial\overline{x_{E}}}{\partial p}\varepsilon\left[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}\right]\label{eq:Model G-sep}
 \end{equation}
 In order to determine $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$,
 we must be able to calculate $\frac{\partial\overline{x_{E}}}{\partial p}$.
@@ -336,24 +336,24 @@ of \emph{p} is a positive, fixed value: $L-N$, the derivative of
 into Eq. (\ref{eq:Model G-sep}) gives:
 
 \begin{equation}
-\frac{\partial\Delta\overline{x_{E}}}{\partial p}=(L-N)\alpha[\frac{1}{2\alpha}-\frac{1}{2\alpha}]=0\label{eq:separation-special case}
+\frac{\partial\Delta\overline{x_{E}}}{\partial p}=(L-N)\alpha\left[\frac{1}{2\alpha}-\frac{1}{2\alpha}\right]=0\label{eq:separation-special case}
 \end{equation}
 Thus, while the overall category mean gets larger as \emph{p} increases,
 the separation between the categories remains constant. 
 
 In the general case, the separation between the two sub-categories
 will show different behavior for different parameter values. Because
-$\frac{\partial\overline{x_{E}}}{\partial p}>0$, the sign of $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$
-depends on the $\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]$
+${\partial\overline{x_{E}}}/{\partial p}>0$, the sign of ${\partial\Delta\overline{x_{E}}}/{\partial p}$
+depends on the $\varepsilon[{1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})]$
 term. When $\alpha<\beta$, the separation increases with increasing
-\emph{p}. This follows from the fact that $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$
-is positive only when $\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]>0$.
-For $\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]$
-to be greater than zero it must be the case that $\frac{1}{\alpha+\varepsilon}>\frac{1}{\beta+\varepsilon}$.
+\emph{p}. This follows from the fact that ${\partial\Delta\overline{x_{E}}}/{\partial p}$
+is positive only when $\varepsilon[{1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})]>0$.
+For $\varepsilon[{1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})]$
+to be greater than zero it must be the case that ${1}/({\alpha+\varepsilon})>{1}/({\beta+\varepsilon})$.
 This, in turn, requires that $\alpha<\beta$. By the same reasoning,
 the separation decreases as a function of increasing \emph{p} when
 $\alpha>\beta$. Finally, the separation remains constant when $\alpha=\beta$,
-because this entails that $\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]=0$,
+because this entails that $\varepsilon[{1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})]=0$,
 verifying the result in Eq. (\ref{eq:separation-special case}).
 
 \chapter{\label{chap:Appendix D}Derivation of Process Model}
@@ -536,7 +536,7 @@ The following parameters were identical for the two models:
 \begin{itemize}
 \item The entrenchment strength is set to $\varepsilon=.2$
 \item The production error on each articulatory dimension is drawn from
-the distribution $\mathcal{\mathscr{N}\left(\mathrm{0,.25\sigma_{x^{z}}}\right)}$,
+the distribution $\mathcal{\mathscr{N}}\left(0,.25\sigma_{x^{Z}}\right)$,
 where $\sigma_{x^{Z}}$ indicates the standard deviation of the current
 distribution of stored tokens on dimension $x^{Z}$
 \item Speaking Rate:
@@ -584,7 +584,7 @@ $\beta$ parameterizes frequency on a scale between 0 and 1.
 \section{Multiple-Parse Model}
 \begin{itemize}
 \item Resting activation acts as a perturbation to the expansion force,
-\emph{E}. The mean of the expansion function is shifted $\frac{1}{4}$
+\emph{E}. The mean of the expansion function is shifted ${1}/{4}$
 of a standard deviation for each unit of \emph{f}, where f parameterizes
 frequency:
 \end{itemize}
@@ -594,12 +594,12 @@ frequency:
 
 \begin{itemize}
 \item The overlap duration for Analysis 2 tokens is a random variable distributed
-according to $\mathcal{\mathscr{N}\left(\mathrm{.25\bar{x}^{N},\sigma_{x^{N}}}\right)}$
+according to $\mathcal{\mathscr{N}}\left(.25\bar{x}^{N},\sigma_{x^{N}}\right)$
 \item The probability of Analysis 1 is given by:
 
 \begin{equation}
 P(a=1)=Ae^{-b(1-Q)}-C\label{eq:segmentation-1-1}
 \end{equation}
-where $Q=\frac{x_{i}^{O}}{x_{i}^{N}}$\emph{ }. For all simulations,
+where $Q={x_{i}^{O}}/{x_{i}^{N}}$\emph{ }. For all simulations,
 the constants are set to: $A=1$, $b=2$, and $C=0$
 \end{itemize}

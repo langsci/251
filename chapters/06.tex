@@ -110,7 +110,7 @@ ultimate realization of $x_{i}^{O}$, the gestural overlap value,
 in the following way: 
 
 \begin{equation}
-Fluency:x_{i}^{O^{\prime}}=x_{i}^{O}+\beta(T-x_{i}^{O})\label{eq:Frequency attractor}
+\textit{Fluency}:x_{i}^{O^{\prime}}=x_{i}^{O}+\beta(T-x_{i}^{O})\label{eq:Frequency attractor}
 \end{equation}
 Because the absolute duration of the optimal gestural overlap will
 depend on the durations of the gestures for each specific token, $T$
@@ -174,7 +174,7 @@ example, the effect of force \emph{E} acting on the overlap variable
 ($x^{O}$) is given in Equation (\ref{eq:Speaking rate transform}) 
 
 \begin{equation}
-Speaking\overset{}{}Rate:x_{i}^{O^{\prime\prime}}=\frac{A}{(1+e^{kE})}\label{eq:Speaking rate transform}
+\textit{SpeakingRate}:x_{i}^{O^{\prime\prime}}=\frac{A}{(1+e^{kE})}\label{eq:Speaking rate transform}
 \end{equation}
 \emph{A} is a normalization factor, and is set to $2x_{i}^{Z^{\prime}}$
 for all variables (\emph{Z}). This has the effect of making the adjusted
@@ -200,11 +200,8 @@ error-free mapping of acoustics to articulation, outside of a small
 error term in production. Entrenchment and memory decay apply as in
 previous models.
 
-\begin{figure}[H]
-
-\begin{centering}
-\includegraphics[width=0.3\textwidth]{figures/SpeakingRateI10000.pdf}\caption{\label{fig:SpeakingRateOnly}Phoneme-Split Model: Speaking rate only}
-\par\end{centering}
+\begin{figure}[h]
+\includegraphics[width=0.5\textwidth]{figures/SpeakingRateI10000.pdf}\caption{\label{fig:SpeakingRateOnly}Phoneme-Split Model: Speaking rate only}
 \end{figure}
 
 With appropriately chosen constants, the speaking rate force is capable
@@ -462,7 +459,7 @@ effect on the model dynamics.}. Analysis 1, the single-segment analysis, is more
 the more highly overlapped the gestures that produced that token,
 while Analysis 2, the 2-segments-in-sequence analysis, is more likely
 for less overlapped gestures. The specific dependence is on the quantity
-$Q_{i}=\frac{x_{i}^{O}}{x_{i}^{N}}$\emph{ }. Larger values of $x_{i}^{O}$
+$Q_{i}={x_{i}^{O}}/{x_{i}^{N}}$. Larger values of $x_{i}^{O}$
 lead to larger values of $Q_{i}$, as do smaller values of $x_{i}^{N}$.
 Selecting for large \emph{Q} thus selects both for larger overlap
 and shorter word durations. That duration should correlate with number
@@ -559,11 +556,12 @@ increases with increasing resting activation (from approximately 31\%
 to 50\%), the overlap proportion increases for the word-level category
 as a whole (Panel 1). 
 
-\begin{figure}[H]
-\includegraphics[width=0.75\textwidth]{figures/MultipleParseResults.pdf}\caption{\label{fig:Multiple-Parse-Results}Multiple-Parse Model: Results as
+\begin{figure}[h]
+\includegraphics[width=\textwidth]{figures/MultipleParseResults.pdf}
+\caption{\label{fig:Multiple-Parse-Results}Multiple-Parse Model: Results as
 a function of resting activation (word frequency). Each point corresponds
 to the mean after 10,000 model iterations. Mean articulatory durations
-are plotted in black. Proportion overlap ($Q=\frac{\bar{x}^{O}}{\bar{x}^{N}}$)
+are plotted in black. Proportion overlap ($Q={\bar{x}^{O}}/{\bar{x}^{N}}$)
 is plotted in red. Panel 1: all word tokens; Panel 2: Analysis 1 tokens
 only; Panel 3: Analysis 2 tokens only.}
 \end{figure}
@@ -634,8 +632,8 @@ In fact, it has been argued \emph{both} that a higher activation level
 should lead to hyper-articulation (e.g., \citealt{Baese-Berk2009}),
 and that it should lead to hypo-articulation (e.g., \citealt{gahl2012reduce})\footnote{Note that different results were obtained in these studies, one based
 on laboratory data, and one on conversational corpus data.}. In works that adopt the latter position the connection seems to
-be assumed. For example, \citeauthor{gahl2012reduce}(2012: p.79)
-write that “Production-based accounts...would lead one to expect
+be assumed. For example, \citet[79]{gahl2012reduce}
+write that “Production-based accounts ... would lead one to expect
 that words that are retrieved quickly tend to be phonetically reduced
 – \emph{provided that fast retrieval speed translates into fast production
 speed”} (emphasis mine).
