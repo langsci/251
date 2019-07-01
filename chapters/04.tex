@@ -44,7 +44,7 @@ On the other hand, if prototypicality depends on some fixed value,
 then the category will not be able to shift beyond the specified limit
 of `goodness'. }. In this chapter we will analyze, in detail, the consequences of
 adding production targets to the basic exemplar models of Chapter
-\ref{sec:The-Exemplar-Model}. In doing so we will arrive at a subset
+\ref{ch:The-Exemplar-Model}. In doing so we will arrive at a subset
 of models that meet the two criteria of boundedness and theoretical
 coherence. The full range of possible outcomes for this set of models
 will then be derived, setting the stage for an investigation of what
@@ -131,7 +131,7 @@ greater than \emph{N}. Regardless of the location of \emph{x}, it
 is always being pushed in the direction of \emph{N}. 
 
 The Soft Target model is built directly from the gradient context-dependent
-model of Chapter \ref{subsec:Model-2:-Lengthening}. Tokens selected
+model of \sectref{subsec:Model-2:-Lengthening}. Tokens selected
 randomly to occur in a biasing context are subjected to a bias that
 increases their value along dimension \emph{x} by a small percentage
 ($\alpha$) of their current value: 
@@ -177,7 +177,7 @@ does not properly involve `lengthening'.
 
 \section{\label{sec:Model-Interpretation}Model Space}
 
-The original lengthening model in Chapter \ref{subsec:Phrase-Final Lengthening}
+The original lengthening model in \sectref{subsec:Phrase-Final Lengthening}
 is a \textsc{process} model. As we saw previously, a \textsc{process}
 model that lacks a production target is unbounded, producing no stable
 outcomes. As will be shown in Section \ref{subsec:Model-B:-Lengthening},
@@ -195,7 +195,7 @@ tokens, can also be shown to produce stable outcomes. The no-target
 \noun{state} model, however, differ with respect to their theoretical
 consistency, and thus, linguistic interpretability. 
 
-Model 2, from Chapter \ref{subsec:Phrase-Final Lengthening}, re-labelled
+Model 2, from \sectref{subsec:Phrase-Final Lengthening}, re-labelled
 as Model A in Table \ref{tab: Model Comparison-1}, is a linguistically
 interpretable model. There is a single category from which tokens
 are selected at random, either to be produced in biasing contexts,
@@ -207,10 +207,8 @@ happen to be produced in a biasing context are also subject to a force
 that lengthens them during production. Model C, however, the \textsc{state}
 model, is not theoretically consistent. 
 
-\begin{table}[h]
+\begin{table}[h]\footnotesize
 \caption{Single-Category Model Space\label{tab: Model Comparison-1}}
-
-\resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccc}
 \lsptoprule
  & \multicolumn{2}{c}{} & \multicolumn{2}{c}{} & Stable & Consistent\tabularnewline
@@ -219,7 +217,7 @@ A & \textsc{Process} & $\alpha(1+x)$ & No Target & – & N & Y\tabularnewline
 B & \textsc{Process} & $\alpha(1+x)$ & Target & $\beta(N-x)$ & (Y) & Y\tabularnewline
 C & \textsc{State} & $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & N\tabularnewline
 \lspbottomrule
-\end{tabular}}%
+\end{tabular}
 \end{table}
 
 In Model C, all tokens have a target at \emph{N}, but tokens produced
@@ -266,9 +264,8 @@ models, among others. However, these other models all contain a superset
 of the representational inconsistencies already described, and therefore
 are not included.}.
 
-\begin{table}[h]
+\begin{table}[h]\footnotesize
 \caption{2-Level Model Space\label{tab: Model Comparison}}
-\resizebox{\textwidth}{!}{%
 \begin{tabular}{ccccccc}
 \lsptoprule
  & \multicolumn{2}{c}{biased} & \multicolumn{2}{c}{non-biased} & Stable & Consistent\tabularnewline\midrule
@@ -277,7 +274,7 @@ E & \textsc{2-State} & $\beta(N-x)$; $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y &
 F & \textsc{Process+ State} & $\alpha(1+x)$; $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & N\tabularnewline
 G & \textsc{State} & $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & Y\tabularnewline
 \lspbottomrule
-\end{tabular}}%
+\end{tabular}
 \end{table}
 
 Only two viable candidates emerge from the full set of models. A pure
@@ -297,7 +294,7 @@ this would be equivalent to a phonological rule of the form:
 Although (\ref{Process-+-State:}) is linguistically ill-formed, it
 is equivalent to the feedback loop at the heart of the basic exemplar
 model\footnote{It should be noted that, as far as I am aware, no one has actually
-proposed the context-dependent exemplar models in Chapter \ref{sec:The-Exemplar-Model}.
+proposed the context-dependent exemplar models in \chapref{ch:The-Exemplar-Model}.
 They are what I take to be the logical extension of the context-free
 exemplar model of \citet{Pierrehumbert2000}.}. Cumulativity of small differences is only possible if the bias effects
 in production (contextually determined allophony) are stored (\noun{state}),
@@ -374,7 +371,7 @@ dashed line) is closer to the mean of the non-biased distribution.
 
 \begin{figure}[H]
 \begin{centering}
-\includegraphics[scale=0.5]{figures/Model6Behavior.pdf}\caption{\label{fig:Model G}Schematic of forces for Pure State Model}
+\includegraphics[width=.75\textwidth]{figures/Model6Behavior.pdf}\caption{\label{fig:Model G}Schematic of forces for Pure State Model}
 \par\end{centering}
 \end{figure}
 
@@ -430,8 +427,8 @@ The equilibrium location for the non-biased sub-category is determined
 by the point at which global entrenchment (\ref{eq:Entrenchment})
 is perfectly balanced by the attractor at \emph{N} (\ref{eq:Inertia Force}).
 Using the equilibrium location of the mean to stand in for the entire
-sub-category: $\beta(N-\overline{x_{E}^{NB}})+\varepsilon(\overline{x_{E}}-\overline{x_{E}^{NB}})=0$.
-Therefore, $\beta(\overline{x_{E}^{NB}}-N)=\varepsilon(\overline{x_{E}}-\overline{x_{E}^{NB}})$.
+sub-category: \[\beta\left(N-\overline{x_{E}^{NB}}\right)+\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{NB}}\right)=0\text{.}\]
+Therefore, \[\beta\left(\overline{x_{E}^{NB}}-N\right)=\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{NB}}\right)\text{.}\]
 For the biased distribution, it is the attractor at \emph{L} (\ref{eq:Length Attractor})
 that will be balanced by global entrenchment (\ref{eq:Entrenchment}):
 $\alpha(\overline{x_{E}^{B}}-L)=\varepsilon(\overline{x_{E}}-\overline{x_{E}^{B}})$.
@@ -468,10 +465,10 @@ In the special case when all forces have the same strength ($\alpha=\beta=\varep
 we can show that Eq. (\ref{eq: sub-dist}) reduces to $\overline{x_{E}}=N+p(L-N)$.
 Therefore, the global category mean is a positive linear function
 of \emph{p}, and the change in the location of that mean is constant:
-$\frac{\partial\overline{x_{E}}}{\partial p}=L-N$. 
+${\partial\overline{x_{E}}}/{\partial p}=L-N$. 
 
 For other cases, it's possible to determine the general behavior of
-$\frac{\partial\overline{x_{E}}}{\partial p}$ even without an exact
+${\partial\overline{x_{E}}}/{\partial p}$ even without an exact
 solution. Assume that the equilibrium state for a given $p=p_{j}$
 has already been determined. Now increase \emph{p} to $p_{k}$. Eq.
 (\ref{eq:weighted mean}) entails that if $p_{k}>p_{j}$ (an increase
@@ -489,26 +486,26 @@ favor of the attractor at \emph{L}, meaning the biased sub-category
 will also shift in the rightward direction. Because the sub-categories
 shift in the same direction, the equilibrium point for the global
 mean is also guaranteed to shift in that direction, and thus to increase
-as \emph{p} increases: $\frac{\partial\overline{x_{E}}}{\partial p}>0$. 
+as \emph{p} increases: ${\partial\overline{x_{E}}}/{\partial p}>0$. 
 
 In the special case where $\alpha=\beta=\varepsilon$, we can use
-the result that $\frac{\partial\overline{x_{E}}}{\partial p}=L-N$,
-and determine that $\frac{\partial\Delta\overline{x_{E}}}{\partial p}=0$.
+the result that ${\partial\overline{x_{E}}}/{\partial p}=L-N$,
+and determine that ${\partial\Delta\overline{x_{E}}}/{\partial p}=0$.
 Therefore, the distance between the two sub-categories remains constant
 in this case. The general form of the partial derivative of (\ref{eq:State Model-sep})
-with respect to \emph{p,} $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$,
+with respect to \emph{p}, ${\partial\Delta\overline{x_{E}}}/{\partial p}$,
 can be written as a function of the partial derivative of $\overline{x_{E}}$
-with respect to \emph{p} ($\frac{\partial\overline{x_{E}}}{\partial p}$):
+with respect to \emph{p} (${\partial\overline{x_{E}}}/{\partial p}$):
 \begin{equation}
-\frac{\partial\Delta\overline{x_{E}}}{\partial p}=\frac{\partial\overline{x_{E}}}{\partial p}\varepsilon[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}]\label{eq: Model G: dsep/dp}
+\frac{\partial\Delta\overline{x_{E}}}{\partial p}=\frac{\partial\overline{x_{E}}}{\partial p}\varepsilon\left[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}\right]\label{eq: Model G: dsep/dp}
 \end{equation}
-Since we know that $\frac{\partial\overline{x_{E}}}{\partial p}$
-is always positive, the sign of $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$
-is determined by the sign of $\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}$.
-The sign of $\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}$
+Since we know that ${\partial\overline{x_{E}}}/{\partial p}$
+is always positive, the sign of ${\partial\Delta\overline{x_{E}}}/{\partial p}$
+is determined by the sign of ${1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})$.
+The sign of ${1}/({\alpha+\varepsilon})-{1}/({\beta+\varepsilon})$
 is determined by the relative sizes of the quantities $\alpha+\varepsilon$,
-and $\beta+\varepsilon$. Therefore, if $\alpha>\beta$ then $\frac{\partial\Delta\overline{x_{E}}}{\partial p}<0$;
-and if $\alpha>\beta$ , then $\frac{\partial\Delta\overline{x_{E}}}{\partial p}<0$.
+and $\beta+\varepsilon$. Therefore, if $\alpha>\beta$ then ${\partial\Delta\overline{x_{E}}}/{\partial p}<0$;
+and if $\alpha>\beta$ , then ${\partial\Delta\overline{x_{E}}}/{\partial p}<0$.
 
 \subsection{\label{subsec:Model-B:-Lengthening}Process Model: Single Category}
 
@@ -516,7 +513,7 @@ The Pure Process Model contains a single category, and a single target
 for that category. Tokens are selected at random, with probability
 \emph{p,} to be produced in the biasing context. This model is identical
 to the Soft Target Model described in Section \ref{subsec:Soft-Targets}
-(Fig. \ref{fig:Model2:LengtheningProcess}). It will be shown in this
+(\figref{fig:Model2:LengtheningProcess}). It will be shown in this
 section that the Process Model is only stable for certain parameter
 values. The behavior of the global mean, and the average separation
 between biased and non-biased productions, will be derived as before.
@@ -536,8 +533,8 @@ by the darker normal curve (subset of tokens subjected to bias during
 production) within the lighter one (subset of tokens non-biased during
 production). 
 
-\begin{figure}[H]
-\centering{}\includegraphics[width=0.75\textwidth]{figures/Model1Behavior.pdf}\caption{\label{fig:Derivation}Schematic of forces for \noun{process} model}
+\begin{figure}[h]
+\includegraphics[width=0.75\textwidth]{figures/Model1Behavior.pdf}\caption{\label{fig:Derivation}Schematic of forces for \noun{process} model}
 \end{figure}
 
 The production value of any token at any time \emph{t} can be calculated,
@@ -617,14 +614,14 @@ To calculate the second quantity of interest: the dependence of sub-distribution
 separation on \emph{p,} the effect of entrenchment must be included.
 Entrenchment acts to bring all tokens back towards the global mean
 by an amount proportional to their distance from that mean (Panel
-3 of Fig. \ref{fig:Derivation}): 
+3 of \figref{fig:Derivation}): 
 
 \begin{equation}
-\overline{x^{B}}^{\prime\prime}=\overline{x^{B}}^{\prime}+\varepsilon(\overline{x}^{\prime}-\overline{x^{B}}^{\prime})\label{eq:Panel 3 biased}
+\overline{x^{B}}^{\prime\prime}=\overline{x^{B}}^{\prime}+\varepsilon\left(\overline{x}^{\prime}-\overline{x^{B}}^{\prime}\right)\label{eq:Panel 3 biased}
 \end{equation}
 
 \begin{equation}
-\overline{x^{NB}}^{\prime\prime}=\overline{x^{NB}}^{\prime}+\varepsilon(\overline{x}^{\prime}-\overline{x^{NB}}^{\prime})\label{eq:Panel 3 unbiased}
+\overline{x^{NB}}^{\prime\prime}=\overline{x^{NB}}^{\prime}+\varepsilon\left(\overline{x}^{\prime}-\overline{x^{NB}}^{\prime}\right)\label{eq:Panel 3 unbiased}
 \end{equation}
 The separation between the two production variants after entrenchment
 applies ($\triangle\overline{x}^{\prime\prime}$) can be determined
@@ -632,7 +629,7 @@ by taking the difference between Equations (\ref{eq:Panel 3 biased})
 and (\ref{eq:Panel 3 unbiased}): 
 
 \begin{equation}
-\triangle\overline{x}^{\prime\prime}\equiv\overline{x^{B}}^{\prime\prime}-\overline{x^{NB}}^{\prime\prime}=(1-\varepsilon)(\overline{x^{B}}^{\prime}-\overline{x^{NB}}^{\prime})
+\triangle\overline{x}^{\prime\prime}\equiv\overline{x^{B}}^{\prime\prime}-\overline{x^{NB}}^{\prime\prime}=\left(1-\varepsilon\right)\left(\overline{x^{B}}^{\prime}-\overline{x^{NB}}^{\prime}\right)
 \end{equation}
 The final separation depends only on the separation prior to the application
 of entrenchment ($\triangle\overline{x}^{\prime}$ in Panel 2), and
@@ -692,7 +689,7 @@ As far as I am aware, \citet{soskuthy2013phonetic} and \citet{Soskuthy2015}
 are unique in the literature in that they capture both change and
 stability within a single model. Actuation occurs via a completely
 speaker-internal mechanism that is an integral component of the model:
-allophone frequency. Model 1 in Chapter \ref{subsec:Model-1:-Context-Free}
+allophone frequency. Model 1 in \sectref{subsec:Model-1:-Context-Free}
 was an instantiation of frequency of use as an instigator of change,
 in the successive reduction of highly frequent words. In that model,
 frequency was a fixed property of a given word type. But changes in
@@ -707,7 +704,7 @@ between multiple allophones of a given phoneme could result.
 
 The model of vowel lengthening in \citet{soskuthy2013phonetic} was
 the basis for the gradient context-dependent model first introduced
-in Chapter \ref{sec:Context-Dependent-Iterativity}. This model was
+in \sectref{sec:Context-Dependent-Iterativity}. This model was
 gradually developed, first into a set of possible models implementing
 at least one soft target, then into a subset of those that were both
 stable and theoretically consistent. The remaining two models were
@@ -850,7 +847,7 @@ and what kinds of sound changes are possible. It is beyond the scope
 of this paper to propose a general theory of category formation. However,
 in the next chapter, we will explore some models in which the basic
 units to which forces apply are distinct from the featural description
-of the linguistic phenomenon. In Chapters \ref{sec:Perception-Production}
-and \ref{chap:Phoneme-Split} we will also modify, or replace, many
+of the linguistic phenomenon. In Chapters \ref{ch:Perception-Production}
+and \ref{ch:Phoneme-Split} we will also modify, or replace, many
 of the assumptions explicitly laid out in Chapters 1- \ref{sec:Models-of-Change},
 including the very definition of phoneme split.

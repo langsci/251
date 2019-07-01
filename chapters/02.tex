@@ -1,4 +1,4 @@
-\chapter{\label{sec:The-Exemplar-Model}The Basic Model}
+\chapter{The Basic Model}\label{ch:The-Exemplar-Model}
 
 One of the earliest exemplar models within linguistics, \citet{Goldinger1996}
 (adapting \citet{hintzman1984minerva}), was designed to capture the
@@ -32,7 +32,7 @@ small perturbations (noise or articulatory biases in production; perceptual
 biases or error in perception) accumulate in the exemplar cloud, leading
 to gradual shifts in the category as a whole. The perception-production
 loop that will form the basis for the models discussed in this book
-is schematized in Fig. \ref{fig:Feedback Loop}.
+is schematized in \figref{fig:Feedback Loop}.
 
 \begin{figure}[H]
 
@@ -49,7 +49,7 @@ needed for achieving multiple outcomes. The second is entrenchment,
 which prevents categories from losing cohesion and dispersing along
 the dimensions of variation. The third mechanism is memory decay,
 privileging more recent perceptions in memory, and preventing the
-category from simply getting larger and larger. Fig. \ref{fig:Baseline-Model-Specification}
+category from simply getting larger and larger. \figref{fig:Baseline-Model-Specification}
 is a schematic of the basic algorithm for the models that will be
 implemented and run below. Mathematical details will be provided in
 the following section and the Appendices. 
@@ -110,9 +110,9 @@ iterations (black). Unless otherwise stated, all models are assumed
 to be one-dimensional along \emph{x}. Individual tokens are given
 as counts over successively binned \emph{x} values. 
 
-Fig. \ref{fig:Basic-Iterative-Model} shows how the distribution as
+\figref{fig:Basic-Iterative-Model} shows how the distribution as
 a whole shifts in the direction of the production bias over time (measured
-in iterations of the perception-production loop). Fig. \ref{fig:NoEntrenchment}
+in iterations of the perception-production loop). \figref{fig:NoEntrenchment}
 shows the result of running the same model, minus the entrenchment
 term, over the same number of iterations. The biasing shift still
 occurs, but with increasing variance along the biased dimension. See
@@ -165,7 +165,7 @@ range in c) is about 10 times larger than in a) and b).}
 
 \section{\label{sec:Iterativity}The Collapse Problem}
 
-As illustrated in Fig. \ref{fig:Basic-Iterative-Model}, the basic
+As illustrated in \figref{fig:Basic-Iterative-Model}, the basic
 exemplar model with a single unidirectional bias can produce cohesive
 movement of an entire cloud of exemplars in the direction of the bias.
 What will be demonstrated in this section is that this shift is unbounded,
@@ -210,7 +210,7 @@ with value $x_{i(+2)}=x_{i(+1)}\left(1-\alpha\right)=x_{i}\left(1-\alpha\right)^
 Proceeding to the general case, we can express the value of any token,
 on any given model iteration, as a function of the value of its originator
 token ($x_{o}$), and the number of generations, \emph{n}, by which
-the current token is removed from that originator. Eq. \ref{eq:linear bias}. 
+the current token is removed from that originator. Equation~\ref{eq:linear bias}. 
 
 \begin{equation}
 x_{o(+n)}=x_{o}\left(1-\alpha\right)^{n}\label{eq:linear bias}
@@ -255,7 +255,7 @@ then added back to the category from which it originated.
 The mean category value along \emph{x} for each category was calculated
 at the end of each of the 500 trials, and converted to a z-score.
 A boxplot of plot of the difference between the means of the two categories
-on each trial is shown in Fig. \ref{fig:HvL}. In 44\% of trials the
+on each trial is shown in \figref{fig:HvL}. In 44\% of trials the
 difference was negative (low-frequency mean larger than high-frequency),
 and in 56\% it was positive. The mean difference over all 500 trials
 was close to zero: .031 (or 16\% of the initial distribution standard
@@ -311,7 +311,7 @@ different results. If the two categories contain the same constant
 number of tokens, but the high-frequency category is still 4 times
 more likely to be produced on any given iteration, then the high-frequency
 category will have a consistently lower value along \emph{x} than
-the low-frequency category. See Fig. \ref{fig:Freq.EqualTokens}.
+the low-frequency category. See \figref{fig:Freq.EqualTokens}.
 This is because the inertia from the larger number of few-times-biased
 tokens is missing. These specific results also depend on the ratio
 of frequencies of the two categories, as well as a number of other
@@ -429,13 +429,13 @@ Model 3 implements a binary production bias, albeit with an error
 term that maintains a small amount of variance. All tokens produced
 in the biasing context are initialized with a mean at the `+' value
 on dimension \emph{x}, while all tokens produced in the non-biasing
-context are initialized at the `-' value. See Fig. \ref{fig:binary-Starting-Distribution}.
+context are initialized at the `-' value. See \figref{fig:binary-Starting-Distribution}.
 As before, all tokens belong to the same category; the different colors
 are for illustrative purposes only, allowing us to track the production
 context during the observation cycle. Because the bias is uni-directional,
 and biasing is categorical, all tokens quickly shift to the biased
 {[}+{]} value. Once a token has a value of /+/ it cannot be biased
-further, nor can it be `un-biased'. This is shown in Fig. \ref{fig:binary-1000iter},
+further, nor can it be `un-biased'. This is shown in \figref{fig:binary-1000iter},
 where we can see that previously biased tokens remain at {[}+{]} even
 if they are subsequently produced in a non-biasing context (white
 bars at {[}+{]} location). This model is, in fact, bounded, because
@@ -445,7 +445,7 @@ between the different contexts. Binary-valued features that distinguish
 between contrastive sound units within a language are widely used
 in phonological theory. This connection will be discussed when the
 model is linked to the linguistic phenomenon of vowel nasalization
-in Chapter \ref{subsec:Model-3:-Nasalization}.
+in \sectref{subsec:Model-3:-Nasalization}.
 
 \begin{figure}[H]
 
