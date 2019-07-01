@@ -11,7 +11,7 @@
 %  draft,draftmode,  
 %  showindex,
 %  nobabel,
-%  booklanguage=german,
+ booklanguage=english,
 %  multiauthors,
 		  ]{langsci/langscibook}    
   
@@ -22,13 +22,13 @@
 \input{localmetadata.tex}
 \input{localpackages.tex}
 \input{localhyphenation.tex}
-\input{localcommands.tex} 
 \addbibresource{localbibliography.bib}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 %%%             Frontmatter                      %%% 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 \begin{document} 
+\input{localcommands.tex} 
   
 \maketitle                
 \frontmatter 
@@ -56,7 +56,7 @@
 \numberwithin{equation}{section}
 \numberwithin{table}{section}
 \numberwithin{figure}{section}
-\include{chapters/appendix}
+% \include{chapters/appendix}
 % % copy the lines above and adapt as necessary
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
