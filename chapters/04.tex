@@ -1,4 +1,4 @@
-\chapter{\label{sec:Models-of-Change}Modeling stability \& change}
+\chapter{Modeling stability \& change}\label{ch:Models-of-Change}
 
 In many implemented exemplar models that include production, unbounded
 iterative biasing is prevented via the elimination of tokens that
@@ -112,8 +112,7 @@ by the usual biasing forces.
 The semi-fixed, or “soft”, duration target is expressed in (\ref{eq:Inertia Force}),
 where $\beta$ is a constant between 0 and 1 that determines the strength
 of the target, and \emph{N} is the location of the target along the
-biasing dimension \emph{x}. 
-
+biasing dimension \emph{x}.
 \begin{equation}
 I(x_{i})=\beta(N-x_{i})\label{eq:Inertia Force}
 \end{equation}
@@ -135,7 +134,6 @@ model of \sectref{subsec:Model-2:-Lengthening}. Tokens selected
 randomly to occur in a biasing context are subjected to a bias that
 increases their value along dimension \emph{x} by a small percentage
 ($\alpha$) of their current value: 
-
 \begin{equation}
 L(x_{i})=\alpha x_{i}\label{eq:Lengthening Force}
 \end{equation}
@@ -185,7 +183,6 @@ adding a soft target to this model will result in stable outcomes
 for a certain range of parameter values. The analogous \textsc{state}
 model can be created by implementing the bias term itself as a soft
 target, as in (\ref{eq:Length Attractor}) (cf. \citealt{soskuthy2013phonetic}). 
-
 \begin{equation}
 L(x_{i})=\alpha(L-x_{i})\label{eq:Length Attractor}
 \end{equation}
@@ -379,15 +376,12 @@ but are repeated here for ease of reference: (\ref{eq:Entrenchment-2})
 Entrenchment, (\ref{eq:Inertia-2}) Inertia (attractor) at \emph{N},
 and (\ref{eq:Length Attractor-2}) Inertia (attractor) at\emph{ L}.
 A small random error term is also included in all models. 
-
 \begin{equation}
 E(x_{i})=\epsilon(\bar{x}-x_{i})\label{eq:Entrenchment-2}
 \end{equation}
-
 \begin{equation}
 I(x_{i})=\beta(N-x_{i})\label{eq:Inertia-2}
 \end{equation}
-
 \begin{equation}
 L(x_{i})=\alpha(L-x_{i})\label{eq:Length Attractor-2}
 \end{equation}
@@ -435,7 +429,6 @@ In order to solve for the three quantities, $\overline{x_{E}^{B}}$,
 $\overline{x_{E}^{NB}}$ , and $\overline{x_{E}}$ , we need a third
 equation linking them. This is given by the equation that expresses
 the global mean as a weighted average of the two sub-category means.
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\overline{x_{E}^{NB}}+p\overline{x_{E}^{B}}\label{eq:weighted mean}
 \end{equation}
@@ -443,7 +436,6 @@ We can now solve for each of the quantities in turn by substitution.
 Appendix C shows the full derivation, and demonstrates that the global
 mean at equilibrium, $\overline{x_{E}}$ , can be expressed in the
 following terms:
-
 \begin{equation}
 \overline{x_{E}}=\frac{(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)}{(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon-(\beta+\varepsilon)p\varepsilon}\label{eq: sub-dist}
 \end{equation}
@@ -555,11 +547,9 @@ productions ($\overline{x_{t}^{B}}^{\prime}$, mean of biased productions
 in Panel 2; $\overline{x_{t}^{NB}}^{\prime}$ mean of non-biased productions
 in Panel 2), can each be given as a function of the global mean at
 time $t$, $\bar{x_{t}}$:
-
 \begin{equation}
 \overline{x_{t}^{B}}^{\prime}=\bar{x_{t}}(1+\alpha)+\beta(N-\bar{x_{t}})\label{eq:Biased}
 \end{equation}
-
 \begin{equation}
 \overline{x_{t}^{NB}}^{\prime}=\bar{x_{t}}+\beta(N-\bar{x_{t}})\label{eq:Non-biased}
 \end{equation}
@@ -568,7 +558,6 @@ locations of the sub-distribution means, and their separation. Therefore,
 the mean in Panel 3 is identical to the mean from Panel 2. This mean
 ($\bar{x_{t}}^{\prime}$) is given by the weighted average of the
 means of the observed production variants: 
-
 \begin{equation}
 \bar{x_{t}}^{\prime}=(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\label{eq: G weighted mean}
 \end{equation}
@@ -577,17 +566,14 @@ locations of the means. This means that they should be unaffected
 by successive iterations of biasing. $\overline{x_{E}}^{\prime}=\overline{x_{E}}$
 , $\overline{x^{B}}^{\prime}=\overline{x^{B}}$, and $\overline{x^{NB}}^{\prime}=\overline{x^{NB}}$.
 Therefore, 
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\overline{x_{E}^{NB}}^{\prime}+p\overline{x_{E}^{B}}^{\prime}\label{eq:equilbrium 1}
 \end{equation}
 and from Eq. (\ref{eq:Biased}) and (\ref{eq:Non-biased}), 
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\{\overline{x_{E}}+\beta(N-\overline{x_{E}})\}+p\{\overline{x_{E}}(1+\alpha)+\beta(N-\overline{x_{E}})\}\label{eq:equilbrium 2}
 \end{equation}
 Solving for $\overline{x_{E}}$ gives
-
 \begin{equation}
 \overline{x_{E}}=\frac{\beta N}{\beta-p\alpha}\label{eq: lengthening process}
 \end{equation}
@@ -614,11 +600,9 @@ separation on \emph{p,} the effect of entrenchment must be included.
 Entrenchment acts to bring all tokens back towards the global mean
 by an amount proportional to their distance from that mean (Panel
 3 of \figref{fig:Derivation}): 
-
 \begin{equation}
 \overline{x^{B}}^{\prime\prime}=\overline{x^{B}}^{\prime}+\varepsilon\left(\overline{x}^{\prime}-\overline{x^{B}}^{\prime}\right)\label{eq:Panel 3 biased}
 \end{equation}
-
 \begin{equation}
 \overline{x^{NB}}^{\prime\prime}=\overline{x^{NB}}^{\prime}+\varepsilon\left(\overline{x}^{\prime}-\overline{x^{NB}}^{\prime}\right)\label{eq:Panel 3 unbiased}
 \end{equation}
@@ -626,7 +610,6 @@ The separation between the two production variants after entrenchment
 applies ($\triangle\overline{x}^{\prime\prime}$) can be determined
 by taking the difference between Equations (\ref{eq:Panel 3 biased})
 and (\ref{eq:Panel 3 unbiased}): 
-
 \begin{equation}
 \triangle\overline{x}^{\prime\prime}\equiv\overline{x^{B}}^{\prime\prime}-\overline{x^{NB}}^{\prime\prime}=\left(1-\varepsilon\right)\left(\overline{x^{B}}^{\prime}-\overline{x^{NB}}^{\prime}\right)
 \end{equation}
@@ -639,7 +622,6 @@ in Panel 2, prior to entrenchment, will always be given by the lengthening
 factor: $\alpha\overline{x_{t}}$. Therefore, at equilibrium, when
 $\overline{x_{t}}=\overline{x_{E}}$, the average distance between
 the two production sub-distributions is given by
-
 \begin{equation}
 \varDelta\overline{x_{E}}=(1-\epsilon)(\alpha\overline{x_{E}}).\label{eq:Cat Sep}
 \end{equation}
@@ -848,5 +830,5 @@ in the next chapter, we will explore some models in which the basic
 units to which forces apply are distinct from the featural description
 of the linguistic phenomenon. In Chapters \ref{ch:Perception-Production}
 and \ref{ch:Phoneme-Split} we will also modify, or replace, many
-of the assumptions explicitly laid out in Chapters 1- \ref{sec:Models-of-Change},
+of the assumptions explicitly laid out in Chapters 1--\ref{ch:Models-of-Change},
 including the very definition of phoneme split.

@@ -54,8 +54,7 @@ is a schematic of the basic algorithm for the models that will be
 implemented and run below. Mathematical details will be provided in
 the following section and the Appendices. 
 
-\begin{figure}[H]
-
+\begin{figure}
 \noindent\fbox{\begin{minipage}[t]{1\columnwidth - 2\fboxsep - 2\fboxrule}%
 Baseline Perception-Production Model (one dimensional)
 \begin{enumerate}[label=(\alph*)]
@@ -80,9 +79,8 @@ mean
 \end{itemize}
 \item Repeat Step \ref{enu:step 2}
 \end{enumerate}
-
-\end{minipage}}\caption{\label{fig:Baseline-Model-Specification}Baseline Model Specification}
-
+\end{minipage}}
+\caption{\label{fig:Baseline-Model-Specification}Baseline Model Specification}
 \end{figure}
 
 
@@ -95,7 +93,6 @@ in both directions that would result from consistent production error,
 and the additional expansion that would occur in the biasing direction.
 The general equation for entrenchment that will be used in this paper
 is the following (based on \citet{Pierrehumbert2000}):
-
 \begin{equation}
 E(x_{i})=\epsilon(\bar{x}-x_{i})\label{eq:Entrenchment}
 \end{equation}
@@ -103,7 +100,7 @@ where $\epsilon$ is a constant between 0 and 1, $x_{i}$ is the current
 location of token \emph{i} along some dimension \emph{x}, and $\overline{x}$
 is the current category mean along that dimension. Figure \ref{fig:First Model param}
 illustrates the evolution of a single exemplar cloud generated from
-the model outlined in \ref{fig:Baseline-Model-Specification}. In
+the model outlined in \figref{fig:Baseline-Model-Specification}. In
 each sub-figure the different colors indicate the same distribution
 at initialization (white), and after a certain fixed number of model
 iterations (black). Unless otherwise stated, all models are assumed
@@ -193,7 +190,6 @@ applies regardless of the current token value. Making the bias proportional
 results in less reduction for tokens that already have small values,
 fixing the percentage of reduction, rather than the absolute value,
 for all tokens.}. 
-
 \begin{equation}
 B(x_{i})=-x_{i}\alpha\label{eq:Production Bias}
 \end{equation}
@@ -211,7 +207,6 @@ Proceeding to the general case, we can express the value of any token,
 on any given model iteration, as a function of the value of its originator
 token ($x_{o}$), and the number of generations, \emph{n}, by which
 the current token is removed from that originator. Equation~\ref{eq:linear bias}. 
-
 \begin{equation}
 x_{o(+n)}=x_{o}\left(1-\alpha\right)^{n}\label{eq:linear bias}
 \end{equation}
@@ -295,7 +290,7 @@ sample will be significantly different from trial to trial is greater
 (\citet{Soskuthy} finds a similar effect using a parameterized exemplar
 model). Variance compounds over iterations, such that the variance
 between independent model runs after 10,000 iterations is greater
-than after 5000 iterations. Fig \ref{fig:Frequency Catch Up} illustrates
+than after 5000 iterations. \figref{fig:Frequency Catch Up} illustrates
 the across-trial variance for the two categories at successive intervals,
 after: 500, 1000, 1500, and 2000 iterations.
 
@@ -388,7 +383,7 @@ generating an exponentially increasing subset of tokens. This is the
 relationship expressed in Eq. (\ref{eq:linear bias}), reformulated
 here, for a positive bias, as $x_{o(+n)}=x_{o}(1+\alpha)$. As this
 subset of tokens moves right, it will drag the rest of the distribution
-with it. Fig (\ref{fig:End context mismatch}) illustrates this effect
+with it. \figref{fig:End context mismatch} illustrates this effect
 via comparison of the observed distribution after a model run of 1,000
 iterations, versus 5,000 iterations.
 
