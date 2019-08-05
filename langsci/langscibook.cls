@@ -1089,11 +1089,11 @@
 \newcommand{\lsNonFirstAuthorsString}{}  %default, will be overwritten iff more than one author
 % \newcommand{\lsImpressionCitationAuthor}{\lsFirstAuthorString \lsNonFirstAuthorsString}
 
-
 \AtBeginDocument{
 \makeatletter
 \let\theauthor\@author 
 \makeatother
+\ifdefempty{\lsFirstAuthorFirstName}{
 \renewcommand{\and}{NONLASTAND} %expand for easier checking. Might need to be undone later on
 \renewcommand{\lastand}{LASTAND} %expand for easier checking
 
@@ -1113,7 +1113,7 @@
       \renewcommand{\lsFirstAuthorLastName}{\StrBehind{\theauthor}{ }}
       }
     }  
-}
+}{}}
  
 
 \newcommand{\lsImpressionCitationAuthor}{ 
