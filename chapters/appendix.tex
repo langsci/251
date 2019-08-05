@@ -44,7 +44,6 @@ of frequency, \emph{f}, as $n_{f}$, and the proportion by which it
 is reduced, as $\delta_{n_{f}}$, from an initial average duration
 of $\overline{d_{0}}$. This period of time will be called an epoch
 (\emph{e}). 
-
 \begin{equation}
 \overline{d_{n_{f}}}=\overline{d_{0}}-\delta_{n_{f}}\overline{d_{0}}\label{eq:epoch-dur}
 \end{equation}
@@ -69,17 +68,14 @@ we can derive Eq. (\ref{eq:Reduction}), which expresses the duration,
 after 1 epoch, for a word category of frequency, \emph{f}, and an
 initial average duration of $\overline{d_{0}}$. Rewriting Eq. (\ref{eq:linear bias})
 in terms of these variables:
-
 \begin{equation}
 \overline{d_{n_{f}}}=\overline{d_{0}}(1-\alpha)^{n_{f}}
 \end{equation}
 Substituting in from Eq. (\ref{eq:epoch-dur}):
-
 \begin{equation}
 \overline{d_{0}}-\delta_{n_{f}}\overline{d_{0}}=\overline{d_{0}}(1-\alpha)^{n_{f}}
 \end{equation}
 And, 
-
 \begin{equation}
 \delta_{n_{f}}=1-(1-\alpha)^{n_{f}}\label{eq:Reduction}
 \end{equation}
@@ -94,7 +90,6 @@ frequency, the difference in word duration should be equal to a constant
 value (\emph{b}). Thus, the predicted difference in duration between
 a low frequency and high frequency word is related to the difference
 in frequencies by the following formula: 
-
 \begin{equation}
 \frac{\Delta d_{e}}{\log(f_{L})-\log(f_{H})}=b\label{eq:log-linear}
 \end{equation}
@@ -107,22 +102,18 @@ its counterpart. Assuming that the two words in question are otherwise
 identical, for our purposes, that they have the same original duration,
 then the difference in absolute duration at that time will be given
 by:
-
 \begin{equation}
 \Delta d_{e}=\delta_{n_{L}}-\delta_{n_{H}}\label{eq:duration-diff}
 \end{equation}
 Combining (\ref{eq:log-linear}) and (\ref{eq:duration-diff}),
-
 \begin{equation}
 \delta_{n_{L}}-\delta_{n_{H}}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]
 \end{equation}
 Substituting in Eq. (\ref{eq:Reduction}):
-
 \begin{equation}
 1-(1-\alpha)^{n_{L}}-[1-(1-\alpha)^{n_{H}}]=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]
 \end{equation}
 Simplifying:
-
 \begin{equation}
 (1-\alpha)^{n_{H}}-(1-\alpha)^{n_{L}}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:reduction-to-freq}
 \end{equation}
@@ -132,12 +123,10 @@ be produced within a given time period. And if reduction is proportional
 to the log frequency, with every production resulting in a given amount
 of reduction, then the number of productions should also be proportional
 to log frequency. 
-
 \begin{equation}
 n_{f}=\rlog(f)\label{eq:n-productions}
 \end{equation}
 Substituting (\ref{eq:n-productions}) into (\ref{eq:reduction-to-freq}):
-
 \begin{equation}
 (1-\alpha)^{\rlog(f_{H})}-(1-\alpha)^{\rlog(f_{L})}=b\left[\log\left(\frac{f_{L}}{f_{H}}\right)\right]\label{eq:boundary cond}
 \end{equation}
@@ -151,7 +140,6 @@ If 1 epoch corresponds to about 20 years, then there will be about
 of production for each category proportional to its frequency, then
 lifetime (\emph{E}) average reduction is given by $\delta_{E_{f}}=1-(1-\alpha)^{4n_{f}}$,
 which can be rewritten as:
-
 \begin{equation}
 \delta_{E_{f}}=1-(1-\alpha)^{4\rlog(f)}
 \end{equation}
@@ -196,12 +184,10 @@ which the displacement that would occur due to the entrenchment force
 is exactly counter-acted by the displacement that would occur due
 to the inertia force. For the non-biased sub-category this equilibrium
 occurs under the following conditions:
-
 \begin{equation}
 \beta\left(\overline{x_{E}^{NB}}-N\right)=\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{NB}}\right)\label{eq:xNB-state}
 \end{equation}
 For the biased sub-category, equilibrium occurs when:
-
 \begin{equation}
 \alpha\left(\overline{x_{E}^{B}}-L\right)=\varepsilon\left(\overline{x_{E}}-\overline{x_{E}^{B}}\right)\label{eq:xB-State}
 \end{equation}
@@ -209,29 +195,24 @@ Because the entrenchment force depends on the global mean, so too
 do the two equilibrium equations. In turn, the global mean can be
 expressed as a function of the sub-category means (where the proportion
 of biased tokens is given by \emph{p}): 
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\overline{x_{E}^{NB}}+p\overline{x_{E}^{B}}\label{eq:weighted-means}
 \end{equation}
 With three equations, we can solve for the three distribution means.
 Solving for $\overline{x_{E}^{NB}}$ in Eq. (\ref{eq:xNB-state}):
-
 \begin{equation}
 \overline{x_{E}^{NB}}=\frac{\beta N+\varepsilon\overline{x_{E}}}{\beta+\varepsilon}
 \end{equation}
 Solving for $\overline{x_{E}^{B}}$ in Eq. (\ref{eq:xB-State}):
-
 \begin{equation}
 \overline{x_{E}^{B}}=\frac{\alpha L+\varepsilon\overline{x_{E}}}{\alpha+\varepsilon}
 \end{equation}
 Substituting these two values into Eq. (\ref{eq:weighted-means}):
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\frac{\beta N+\varepsilon\overline{x_{E}}}{\beta+\varepsilon}+p\frac{\alpha L+\varepsilon\overline{x_{E}}}{\alpha+\varepsilon}
 \end{equation}
 Solving for $\overline{x_{E}}$ as a function of \emph{p, }and collecting
 terms:
-
 \begin{equation}
 \overline{x_{E}}=\frac{(1-p)\beta N}{\beta+\varepsilon}+\frac{(1-p)\varepsilon\overline{x_{E}}}{\beta+\varepsilon}+\frac{p\alpha L}{\alpha+\varepsilon}+\frac{p\varepsilon\overline{x_{E}}}{\alpha+\varepsilon}
 \end{equation}
@@ -245,7 +226,10 @@ terms:
 \end{equation}
 
 \begin{equation}
-\frac{\overline{x_{E}}(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon\overline{x_{E}}-(\beta+\varepsilon)p\varepsilon\overline{x_{E}}}{(\beta+\varepsilon)(\alpha+\varepsilon)}=\frac{(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)}{(\alpha+\varepsilon)(\beta+\varepsilon)}
+\begin{aligned}[t]
+& \frac{\overline{x_{E}}(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon\overline{x_{E}}-(\beta+\varepsilon)p\varepsilon\overline{x_{E}}}{(\beta+\varepsilon)(\alpha+\varepsilon)}\\
+= &\frac{(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)}{(\alpha+\varepsilon)(\beta+\varepsilon)}
+\end{aligned}
 \end{equation}
 
 \begin{equation}
@@ -288,7 +272,6 @@ The distance between the means of the two sub-categories can also
 be written as a function of \emph{p}. Once equilibrium has been reached,
 the separation can be derived from Eqs. (\ref{eq:xNB-state}) and
 (\ref{eq:xB-State}):
-
 \begin{equation}
 \Delta\overline{x_{E}}\equiv\overline{x_{E}^{B}}-\overline{x_{E}^{NB}}=\frac{\alpha L+\varepsilon\overline{x_{E}}}{\alpha+\varepsilon}-\frac{\beta N+\varepsilon\overline{x_{E}}}{\beta+\varepsilon}
 \end{equation}
@@ -303,7 +286,6 @@ Collecting terms and simplifying:
 \end{equation}
 The change in sub-category separation as a function of changing \emph{p}
 is thus given by:
-
 \begin{equation}
 \frac{\partial\Delta\overline{x_{E}}}{\partial p}=\frac{\partial\overline{x_{E}}}{\partial p}\varepsilon\left[\frac{1}{\alpha+\varepsilon}-\frac{1}{\beta+\varepsilon}\right]\label{eq:Model G-sep}
 \end{equation}
@@ -311,12 +293,10 @@ In order to determine $\frac{\partial\Delta\overline{x_{E}}}{\partial p}$,
 we must be able to calculate $\frac{\partial\overline{x_{E}}}{\partial p}$.
 For the special case in which all forces have the same strength ($\alpha=\beta=\varepsilon$),
 it is straightforward to calculate the derivative of Eq. (\ref{eq:Model G-eq}):
-
 \begin{equation}
 \overline{x_{E}}=\frac{2\alpha^{2}N+p(2\alpha^{2}L-2\alpha^{2}N)}{4\alpha^{2}-2\alpha^{2}}
 \end{equation}
 Collecting terms and simplifying:
-
 \begin{equation}
 \overline{x_{E}}=\frac{2\alpha^{2}[N+pL-pN]}{2\alpha^{2}[2-1]}
 \end{equation}
@@ -333,7 +313,6 @@ between the two. The change in the global category mean as a function
 of \emph{p} is a positive, fixed value: $L-N$, the derivative of
 (\ref{eq: State-special case}). Plugging this value for $\frac{\partial\overline{x_{E}}}{\partial p}$
 into Eq. (\ref{eq:Model G-sep}) gives:
-
 \begin{equation}
 \frac{\partial\Delta\overline{x_{E}}}{\partial p}=(L-N)\alpha\left[\frac{1}{2\alpha}-\frac{1}{2\alpha}\right]=0\label{eq:separation-special case}
 \end{equation}
@@ -375,7 +354,6 @@ First we apply the lengthening process, at time $t$, to tokens drawn
 from a distribution with a global mean of $\overline{x_{t}}$. These
 tokens are simultaneously subjected to an inertial force. Eq. (\ref{eq:Model-B B-Prime})
 gives the mean of the biased sub-distribution at time \emph{t,}
-
 \begin{equation}
 \overline{x_{t}^{B}}^{\prime}=\overline{x_{t}}(1+\alpha)+\beta(N-\overline{x_{t}})\label{eq:Model-B B-Prime}
 \end{equation}
@@ -388,7 +366,6 @@ sub-distribution at time \emph{t}.
 On average, a proportion \emph{p} of the distribution will be lengthened,
 thus the location of the global mean after lengthening and inertia
 apply, can be expressed as
-
 \begin{equation}
 \overline{x_{t}}^{\prime}=(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\label{eq:Model-B weight mean}
 \end{equation}
@@ -398,7 +375,6 @@ mean, only the locations of the sub-distribution means, and their
 separation. To see this, we can compare the global mean before and
 after entrenchment applies. After entrenchment, the means of each
 sub-distribution are given by:
-
 \begin{equation}
 \overline{x_{t}^{B}}^{\prime\prime}=\overline{x_{t}^{B}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)
 \end{equation}
@@ -407,12 +383,10 @@ sub-distribution are given by:
 \overline{x_{t}^{NB}}^{\prime\prime}=\overline{x_{t}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)
 \end{equation}
 Substituting into Eq. (\ref{eq:Model-B weight mean}), gives
-
 \begin{equation}
 \overline{x}_{t}^{''}=(1-p)\left[\overline{x_{t}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)\right]+p\left[\overline{x_{t}^{B}}^{\prime}-\varepsilon\left(\overline{x}_{t}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)\right]
 \end{equation}
 Simplifying and collecting terms:
-
 \begin{equation}
 =\overline{x_{t}}^{\prime}-\varepsilon(1-p)\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{NB}}^{\prime}\right)-p\varepsilon\left(\overline{x_{t}}^{\prime}-\overline{x_{t}^{B}}^{\prime}\right)
 \end{equation}
@@ -427,7 +401,6 @@ Simplifying and collecting terms:
 The term $(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}$
 is equivalent to $\overline{x_{t}}^{\prime}$ by Eq (\ref{eq:Model-B weight mean}).
 Therefore
-
 \begin{equation}
 \overline{x_{t}}^{\prime\prime}=\overline{x_{t}}^{\prime}-\varepsilon\overline{x_{t}}^{\prime}+\varepsilon\overline{x_{t}}^{\prime}=\overline{x_{t}}^{\prime}
 \end{equation}
@@ -437,7 +410,6 @@ Equilibrium occurs when the two sub-distributions are also at equilibrium,
 and the global mean stops changing: $\overline{x_{E}}=\overline{x_{E}}^{\prime}$,
 $\overline{x_{E}^{NB}}^{\prime}=\overline{x_{E}^{NB}}$, and $\overline{x_{E}^{B}}^{\prime}=\overline{x_{E}^{B}}$.
 Therefore,
-
 \begin{equation}
 \overline{x_{E}}=(1-p)\overline{x_{E}^{NB}}^{\prime}+p\overline{x_{E}^{B}}^{\prime}
 \end{equation}
@@ -479,7 +451,6 @@ and the percentage of biasing contexts is not too large.
 To calculate the dependence of the sub-distribution separation on
 \emph{p,} the effect of entrenchment must be included. The equilibrium
 separation is defined as: 
-
 \begin{equation}
 \triangle\overline{x_{E}}^{\prime\prime}\equiv\overline{x_{E}^{B}}^{\prime\prime}-\overline{x_{E}^{NB}}^{\prime\prime}
 \end{equation}
@@ -493,23 +464,19 @@ And
 \overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{NB}}^{\prime}+\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 Therefore, 
-
 \begin{equation}
 \overline{x_{E}^{B}}^{\prime\prime}-\overline{x_{E}^{NB}}^{\prime\prime}=\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}+\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{B}}^{\prime}\right)-\varepsilon\left(\overline{x_{E}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 Collecting terms:
-
 \begin{equation}
 =\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}-\varepsilon\left(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 and
-
 \begin{equation}
 \triangle\overline{x_{E}}^{\prime\prime}=(1-\varepsilon)\left(\overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}\right)
 \end{equation}
 The observed separation at equilibrium depends on the separation due
 to prior model forces. From Eqs. (\ref{eq:Model-B B-Prime}) and (\ref{eq:Model-B NB-Prime}), 
-
 \begin{equation}
 \overline{x_{E}^{B}}^{\prime}-\overline{x_{E}^{NB}}^{\prime}=\overline{x_{E}}(1+\alpha)+\beta(N-\overline{x_{E}})-[\overline{x_{E}}+\beta(N-\overline{x_{E}})]
 \end{equation}
@@ -521,7 +488,6 @@ for any specific subset of tokens to continue to increase their separation
 from the rest of the distribution. Therefore, the prior separation
 between the sub-distribution means is always given by the lengthening
 bias applied to that mean. And the total separation, by 
-
 \begin{equation}
 \varDelta\overline{x_{E}}=(1-\epsilon)(\alpha\overline{x_{E}}).\label{eq:Cat Sep-1}
 \end{equation}
@@ -544,7 +510,6 @@ distribution of stored tokens on dimension $x^{Z}$
 to $\mathcal{\mathscr{N}\left(\mathrm{0,.25}\right)}$. 
 \item The speaking rate transformation lengthens or shortens a given duration
 parameter, according to the following dependence on \emph{E:}
-
 \begin{equation}
 x_{i}^{O^{\prime}}=\frac{2x_{i}^{O}}{(1+e^{k_{O}E})}\label{eq:Speaking rate transform-1}
 \end{equation}
@@ -570,7 +535,6 @@ or to exceed 500 ms
 \end{itemize}
 
 \section{No-Phoneme Model}
-
 The fluency attractor affects overlap duration according to the following
 formula:
 
@@ -595,7 +559,6 @@ frequency:
 \item The overlap duration for Analysis 2 tokens is a random variable distributed
 according to $\mathcal{\mathscr{N}}\left(.25\bar{x}^{N},\sigma_{x^{N}}\right)$
 \item The probability of Analysis 1 is given by:
-
 \begin{equation}
 P(a=1)=Ae^{-b(1-Q)}-C\label{eq:segmentation-1-1}
 \end{equation}
