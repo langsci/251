@@ -43,7 +43,7 @@ in order to facilitate their recovery relative to high-frequency words.
 A speaker-based approach, on the other hand, attributes frequency
 effects to automatic consequences of speech production. Either high-frequency
 words have higher resting activation levels on average, leading to
-faster retrieval, and thus more rapid articulation (e.g., \citeauthor{gahl2012reduce}),
+faster retrieval, and thus more rapid articulation (e.g., \citealt{gahl2012reduce}),
 or increased practice with higher-frequency words leads to greater
 fluency, resulting in shorter, more efficient articulation (e.g.,
 \citealt{Bybee2002}).
@@ -62,13 +62,12 @@ multiple times. Thus, it might seem to follow that higher-frequency
 categories will shift further leftward than lower-frequency categories
 over the same period of time. However, as we saw in Section \ref{subsec:Model-1:-Context-Free},
 the relative average durations of a lower- and higher- frequency word
-category depend on whether the number of tokens in a given category
-is proportional to the frequency of that category. Furthermore, given
+category depend on whether the frequency difference is implemented as a difference in token numbers, or a difference in average activation. Furthermore, given
 enough time (= number of productions), all categories will end up
 at the same minimum duration. In other words, the model will converge
 on this one stable state from any starting point. This is the inevitable
 result of a model with an unopposed force acting, and thus is not
-particularly surprising (\citet{Baker2011} make a similar observation
+particularly surprising (\citealt{Baker2011} make a similar observation
 about gradual-accumulation theories of change in general). However,
 it raises an important issue regarding the determination of synchronic
 versus diachronic time in exemplar models. 
@@ -110,9 +109,10 @@ that word durations should get steadily shorter over the lifetime.
 Of course, there is a hard limit on how much a word can be reduced.
 If we predict that some words will hit this limit within the given
 time frame then the frequency effect should actually be lost in the
-subset of words that have reached this limit. Although I am not aware
-of any studies that have specifically investigated these questions,
-I strongly suspect that these predictions would not be borne out.
+subset of words that have reached this limit. I am not aware of any evidence
+that frequency effects vary over time, but this lack may be due to the fact that
+previous studies have not specifically looked for such effects.
+
 
 \section{\label{subsec:Model-2:-Lengthening}Model 2: Vowel lengthening}
 
@@ -138,7 +138,7 @@ voiced obstruents) are lengthened by some degree, while vowels not
 produced in the lengthening context remain unchanged.
 
 However, the results of the Model 2 simulation show that, over time,
-“short” tokens gets longer, and “long” tokens get even
+“short” tokens get longer, and “long” tokens get even
 longer, and eventually all tokens are maximally long whether they're
 produced in pre-voiced or pre-voiceless contexts. Furthermore, it
 is not possible to guarantee, at any intermediate stage, that tokens
@@ -165,7 +165,7 @@ these problems could presumably be eliminated. Let us consider what
 that would entail. From the perspective of theoretical linguistics,
 allophones, by definition, have no independent representational status.
 They exist only at the surface, only as the realization of a phoneme
-to which some rule, or process, has applied\footnote{Note that this model is entirely implemented at the phoneme level,
+to which some rule, or process, has applied.\footnote{Note that this model is entirely implemented at the phoneme level,
 allowing the presumed forces to act directly on their targets. Although
 exemplar models often assume a word-level representation (explicitly
 or implicitly), most are actually implemented at the phoneme level,
@@ -183,7 +183,7 @@ and “tack”, but from a large number of words, such as “cat”,
 level of the individual word are only one small part of what affects
 the realization of a given phoneme. Thus, establishing that a phoneme-level
 effect follows from a word-level interaction requires a significantly
-more complex model than is usually implemented. }. We are perfectly free to adopt the hypothesis that allophones do,
+more complex model than is usually implemented. } We are perfectly free to adopt the hypothesis that allophones do,
 in fact, have separate representational status, and create a model
 in which “lengthened” allophones are only selected from the
 “lengthened” (sub) category, and only “unlengthened” allophones
@@ -193,7 +193,7 @@ however, if we continue to apply the lengthening bias to the lengthened
 tokens. By creating a category for these allophones we are effectively
 encoding their context: this category consists of tokens that occur
 before voiced obstruents. Applying lengthening to such a token implies
-that the token was original unlengthened (non-biased). It also implies
+that the token was originally unlengthened (non-biased). It also implies
 that the contextual information was discarded when the token was stored,
 and so must be added during production. A model with both explicit
 representational structure incorporating a biasing context, and an
@@ -213,7 +213,6 @@ not just to be discrete, but to be binary in nature, taking on only
 one of two possible values, “+” or “\textminus”. Thus a partial
 feature matrix might consist of 
 \[\left[\begin{array}{c}
-+\textit{voice}\\
 -\textit{nasal}\\
 +\textit{coronal}\\
 -\textit{del.rel}
@@ -241,9 +240,9 @@ introduces a biasing dimension other then duration. This is important
 because duration is significantly simpler than most phonetic variables.
 Additionally, duration possesses what may be a unique property: it
 is invariant under the transformation from production to perception
-(in the absence of error)\footnote{There is, however, potential ambiguity in attributing duration differences
+(in the absence of error).\footnote{There is, however, potential ambiguity in attributing duration differences
 to inherent duration, versus differences in speaking rate or prosodic
-contexts. See \chapref{ch:Summary}. }. Thus, an architecture that can derive the correct results for phonological
+contexts. See \chapref{ch:Summary}. } Thus, an architecture that can derive the correct results for phonological
 processes acting on duration is not guaranteed to do the same for
 other phonological dimensions. 
 

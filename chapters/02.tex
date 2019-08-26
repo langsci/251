@@ -1,15 +1,15 @@
 \chapter{The basic model}\label{ch:The-Exemplar-Model}
 
 One of the earliest exemplar models within linguistics, \citet{Goldinger1996}
-(adapting \citet{hintzman1984minerva}), was designed to capture the
+(adapting \citealt{hintzman1984minerva}), was designed to capture the
 effect of past experience on current perception. In this model, new
 tokens are experienced and added to memory in the following way. First,
 the n-dimensional similarity between a novel (`probe') token and all
-members of a given category, is calculated. The overall degree of
+members of a given category is calculated. The overall degree of
 similarity will determine whether a given probe is recognized or not.
 The similarity matrix is, in turn, used to create an `echo' of the
 probe: the average of the values of each stored token, along each
-dimension, weighted by its similarity to the probe. This echo, rather
+dimension, weighted by the similarity of that token to the probe. This echo, rather
 than the probe itself, is what is then added to memory. These properties
 allow the model to simulate the phenomenon whereby listeners often
 mistakenly `remember' tokens that are particularly `good', or prototypical,
@@ -61,7 +61,7 @@ Baseline Perception-Production Model (one dimensional)
 \item Initialize cloud
 \begin{itemize}
 \item assign values to a cloud of \emph{n} tokens (randomly generated from
-a Normal distribution of mean $\mu$ and variance $\sigma^{2}$)
+a normal distribution of mean $\mu$ and variance $\sigma^{2}$)
 \item assign each token an age (a time at which it was produced)
 \end{itemize}
 \item \label{enu:step 2}Randomly select a token for production
@@ -77,7 +77,7 @@ mean
 \item add the new token value to the cloud
 \item remove one of the oldest tokens from the cloud
 \end{itemize}
-\item Repeat Step \ref{enu:step 2}
+\item Return to Step \ref{enu:step 2}
 \end{enumerate}
 \end{minipage}}
 \caption{\label{fig:Baseline-Model-Specification}Baseline Model Specification}
@@ -87,12 +87,12 @@ mean
 \section{Entrenchment}
 
 Category consolidation, or variance reduction, has been motivated
-as an effect of practice, or motor tuning (e.g., \citealp{saltzman1989dynamical}).
+as an effect of practice, or motor tuning (e.g. \citealp{saltzman1989dynamical}).
 Implementationally, it is necessary to prevent the category expansion
 in both directions that would result from consistent production error,
 and the additional expansion that would occur in the biasing direction.
 The general equation for entrenchment that will be used in this paper
-is the following (based on \citet{Pierrehumbert2000}):
+is the following (based on \citealt{Pierrehumbert2000}):
 \begin{equation}
 E(x_{i})=\epsilon(\bar{x}-x_{i})\label{eq:Entrenchment}
 \end{equation}
@@ -123,20 +123,20 @@ The older the tokens, the more times, on average, they will have been
 chosen as production targets, reinforcing the initial conditions of
 the cloud. Figure \ref{fig:No-memory-decay:} is an illustration of
 this effect for the same model and starting conditions as the previous
-two simulations, but with the memory decay term removed. No tokens
+two simulations, but with the memory decay term removed. No tokens were
 discarded. The skew in the direction of the production bias (implemented
 as an incrementally decreasing function) can be seen in the left tail
 of the distribution, but older tokens keep the category anchored at
 the right. There are a number of ways in which a memory decay term
-can be implemented. In these, and the following, models the total
+can be implemented. In these and the following models, the total
 number of tokens is kept constant by removing one of the oldest tokens
-each time a new token is added\footnote{There are other ways to keep the number of category members constant.
+each time a new token is added.\footnote{There are other ways to keep the number of category members constant.
 The token furthest from the mean could be discarded on each iteration,
 for example. This would act to increase the entrenchment effect, further
 reducing variation. However, the purpose here is not only to keep
 the number of tokens constant, but to allow a domino effect to develop
 by increasing the probability that a token will be chosen again with
-each biasing iteration. }.
+each biasing iteration. }
 
 \begin{figure}[H]
     \begin{subfigure}[t]{.3\textwidth}
@@ -177,19 +177,18 @@ will also force us to consider the question of whether exemplar models
 are to be evaluated only at convergence, and what the relationship
 is between model time and real time, in terms of experiences of instances
 of speech. Finally, the specific ways in which the models fail will
-be informative regarding the mental representations that these models
-are meant to map to. 
+be informative regarding the mental representations they are meant to instantiate.
 
 The three classes of phenomena to be modeled in this section are the
-following: a context-free process, and two context-dependent processes:
+following: a context-free process; and two context-dependent processes, 
 one gradient, and one categorical. For all of the three basic models,
 a production bias, \emph{B}, will be implemented for a given token
 \emph{i}, as a fixed percentage reduction ($\alpha$) in the value
-of \emph{$x_{i}$} along dimension \emph{x}. See Eq.(\ref{eq:Production Bias})\footnote{The production bias in \citet{Pierrehumbert2000} is a constant that
+of \emph{$x_{i}$} along dimension \emph{x}. See Eq.(\ref{eq:Production Bias}).\footnote{The production bias in \citet{Pierrehumbert2000} is a constant that
 applies regardless of the current token value. Making the bias proportional
-results in less reduction for tokens that already have small values,
+results in less reduction for tokens that already have small values, thus
 fixing the percentage of reduction, rather than the absolute value,
-for all tokens.}. 
+for all tokens.} 
 \begin{equation}
 B(x_{i})=-x_{i}\alpha\label{eq:Production Bias}
 \end{equation}
@@ -206,7 +205,7 @@ with value $x_{i(+2)}=x_{i(+1)}\left(1-\alpha\right)=x_{i}\left(1-\alpha\right)^
 Proceeding to the general case, we can express the value of any token,
 on any given model iteration, as a function of the value of its originator
 token ($x_{o}$), and the number of generations, \emph{n}, by which
-the current token is removed from that originator. Equation~\ref{eq:linear bias}. 
+the current token is removed from that originator. See Eq.(~\ref{eq:linear bias}). 
 \begin{equation}
 x_{o(+n)}=x_{o}\left(1-\alpha\right)^{n}\label{eq:linear bias}
 \end{equation}
@@ -221,12 +220,12 @@ simulations compare the behavior of a low-frequency category, to a
 high-frequency category, one whose tokens are produced, and thus experienced,
 more often. All simulations begin with the same starting distributions:
 a high-frequency category with 800 tokens, and a low-frequency category
-with 200 token. Steps were taken to make the distributions of the
-two categories as close as possible\footnote{The high-frequency category was generated by randomly sampling 800
+with 200 tokens. Steps were taken to make the distributions of the
+two categories as close as possible.\footnote{The high-frequency category was generated by randomly sampling 800
 tokens from a normal distribution with mean of $50x$ and a standard
 deviation of $2x$. The low-frequency category was then created by
 sampling 200 tokens from the high-frequency category: 50 tokens from
-each quartile.}. See Figure \ref{fig:Frequency Starting Dist}. 
+each quartile.} See Figure \ref{fig:Frequency Starting Dist}. 
 
 \begin{figure}[H]
 
@@ -249,7 +248,7 @@ then added back to the category from which it originated.
 
 The mean category value along \emph{x} for each category was calculated
 at the end of each of the 500 trials, and converted to a z-score.
-A boxplot of plot of the difference between the means of the two categories
+A boxplot of the difference between the means of the two categories
 on each trial is shown in \figref{fig:HvL}. In 44\% of trials the
 difference was negative (low-frequency mean larger than high-frequency),
 and in 56\% it was positive. The mean difference over all 500 trials
@@ -258,11 +257,11 @@ deviation). Thus we do not see a consistent difference in the two
 categories after an arbitrarily selected number of iterations. Intuitively,
 we might have expected the higher-frequency category to have moved
 further along \emph{x}, and have a lower value, because tokens from
-that category are produced more often, and thus, multiply-biased.
+that category are produced more often, and thus multiply-biased.
 However, it is also the case that, if frequency of occurrence is expressed
 in number of tokens, and sampling for production is random, then producing
 a token that had undergone biasing \emph{fewer} times is also more
-likely in high, than low, frequency categories. This is simply because
+likely in high than in low frequency categories. This is simply because
 there are more tokens, which lowers the probability of selecting any
 individual token, and thus lowers the probability of selecting the
 daughter of any individual token, relative to the low-frequency category. 
@@ -287,12 +286,12 @@ is larger for the lower-frequency category due to undersampling; because
 fewer tokens are produced from the low-frequency category in a given
 trial, and the tokens are selected randomly, the likelihood that the
 sample will be significantly different from trial to trial is greater
-(\citet{Soskuthy} finds a similar effect using a parameterized exemplar
+(\citealt{Soskuthy} finds a similar effect using a parameterized exemplar
 model). Variance compounds over iterations, such that the variance
 between independent model runs after 10,000 iterations is greater
 than after 5000 iterations. \figref{fig:Frequency Catch Up} illustrates
 the across-trial variance for the two categories at successive intervals,
-after: 500, 1000, 1500, and 2000 iterations.
+after 500, 1000, 1500, and 2000 iterations.
 
 \begin{figure}[H]
 \centering{}\includegraphics[width=.75\textwidth]{figures/FrequencyOverTime.pdf}\caption{\label{fig:Frequency Catch Up}Average z-scored value for High (white)
@@ -306,7 +305,7 @@ different results. If the two categories contain the same constant
 number of tokens, but the high-frequency category is still 4 times
 more likely to be produced on any given iteration, then the high-frequency
 category will have a consistently lower value along \emph{x} than
-the low-frequency category. See \figref{fig:Freq.EqualTokens}.
+the low-frequency category. The results of the equal-tokens simulations are shown in \figref{fig:Freq.EqualTokens}.
 This is because the inertia from the larger number of few-times-biased
 tokens is missing. These specific results also depend on the ratio
 of frequencies of the two categories, as well as a number of other
@@ -342,11 +341,11 @@ originating category.
 \subsubsection{\label{subsec:Phrase-Final Lengthening}Model 2: Gradient context-dependent bias}
 
 Model 2 implements a gradient production bias, similar to the one
-used in Model 1, but an increasing, rather than decreasing, function
+used in Model 1, but with an increasing, rather than decreasing, function
 of $x$. On each iteration, the randomly selected token has probability
 \emph{p} (< 0.5) of increasing by a fixed percentage ($\alpha$) of
 its current value. As before, the category is initialized by sampling
-from a Normal distribution, and all tokens begin with non-biased values.
+from a normal distribution, and all tokens begin with non-biased values.
 Because there is only one cloud in perception, the only time a difference
 between biased and non-biased tokens can be observed is at the moment
 of production. Therefore, model outputs will be given in terms of
@@ -355,7 +354,7 @@ the model.
 
 The iterativity of the perception-production loop allows for tokens
 to be biased multiple times, but also for tokens to remain persistently
-non-biased, the more so, the larger the category is in terms of stored
+non-biased, the more so the larger the category is in terms of stored
 exemplars, and the smaller the value of \emph{p}. To understand model
 behavior it is useful to think of each iteration as involving four
 possible outcomes. In the first, a relatively low-valued token (the
@@ -375,7 +374,7 @@ to increase without bound. Despite the fact that the second type of
 outcome ensures the persistence of low-valued tokens, the category
 as a whole will move unboundedly rightward along \emph{x}. This is
 due to the combined effect of memory decay and entrenchment. For $p<.5$,
-the over-all mean of the distribution will always be closer to the
+the overall mean of the distribution will always be closer to the
 lower-valued side of the distribution, and will initially act to oppose
 the increase due to production bias. However, as higher-valued tokens
 are added to the category, they seed even higher-valued daughter tokens,
@@ -408,13 +407,13 @@ context.}
 As expected, the same unboundedness problem arises as was seen in
 Model 1. With the addition of a threshold (ceiling or floor value
 along \emph{x}) the sub-distributions merge, neutralizing the difference
-between biased and non-biased contexts\footnote{\citet{DBLP:journals/corr/Tupper14a} attributes a merged outcome
+between biased and non-biased contexts.\footnote{\citet{DBLP:journals/corr/Tupper14a} attributes a merged outcome
 such as this to perfect categorization accuracy, i.e., failure to
-discard ambiguous tokens. }. It will also be shown that keeping all tokens in the same category,
+discard ambiguous tokens. } It will also be shown that keeping all tokens in the same category,
 regardless of history, results in another type of problem – what I
 will call context mismatch. Context mismatch will be discussed when
 this model is linked to the linguistic phenomenon of vowel lengthening
-in Section \ref{subsec:Model-2:-Lengthening}. 
+in Section \ref{subsec:Model-2:-Lengthening}.
 
 \subsubsection{\label{subsec:Model-3:-Categorical}Model 3: Categorical context-dependent bias}
 
