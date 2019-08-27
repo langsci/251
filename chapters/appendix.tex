@@ -9,7 +9,7 @@ the following parameter values were used:
 \lsptoprule
  & {$\varepsilon$} & {$\sigma_{\text{error}}$} & $\alpha$ & {p} & {$\beta$} & $\sigma$ & N\tabularnewline
 \midrule
-Baseline Model (\chapref{ch:The-Exemplar-Model}) & (.3) & $\sigma$ & .1 & – & – & 2 & –\tabularnewline
+Baseline Model (\chapref{ch:The-Exemplar-Model}) & .3 & $\sigma$ & .1 & – & – & 2 & –\tabularnewline
 Model 1: Context-Free (\sectref{subsec:Model-1:-Context-Free}) & .3 & $\sigma$ & .5$\sigma$ & – & – & 2 & –\tabularnewline
 Model 2: Context-Dep. (Gradient) (\sectref{subsec:Phrase-Final Lengthening}) & .3 & $\sigma$ & .1 & .25 & – & 2 & –\tabularnewline
 Model 3: Context-Dep. (Discrete) (\sectref{subsec:Model-3:-Categorical}) & .3 & $\sigma$ & – & .5 & – & 2 & –\tabularnewline
@@ -40,7 +40,7 @@ in duration comparable to what has been reported in the literature.
 
 We don't know how many model iterations correspond to 20 years. But
 we will define the number of productions during this time, for a word
-of frequency, \emph{f}, as $n_{f}$, and the proportion by which it
+of frequency \emph{f}, as $n_{f}$, and the proportion by which it
 is reduced, as $\delta_{n_{f}}$, from an initial average duration
 of $\overline{d_{0}}$. This period of time will be called an epoch
 (\emph{e}). 
@@ -65,7 +65,7 @@ words are always shorter than lower-frequency ones.
 In the simplified scenario, each generation is exponentially more
 reduced than the last. From Eq (\ref{eq:linear bias}): $x_{o(+n)}=x_{o}\left(1-\alpha\right)^{n}$,
 we can derive Eq. (\ref{eq:Reduction}), which expresses the duration,
-after 1 epoch, for a word category of frequency, \emph{f}, and an
+after 1 epoch, for a word category of frequency \emph{f}, and an
 initial average duration of $\overline{d_{0}}$. Rewriting Eq. (\ref{eq:linear bias})
 in terms of these variables:
 \begin{equation}
@@ -83,8 +83,8 @@ And,
 We don't know what the amount of reduction over 1 epoch is. But we
 do have an idea of the size of the frequency effect: word duration
 as a function of frequency (log frequency is typically what is plotted
-in order to make the frequency distribution closer to Normal (see,
-e.g., \citet{gahl2012reduce})). If we assume a linear relation between
+in order to make the frequency distribution closer to Normal (see
+e.g. \citet{gahl2012reduce})). If we assume a linear relation between
 word duration and log frequency, then for each unit change in log
 frequency, the difference in word duration should be equal to a constant
 value (\emph{b}). Thus, the predicted difference in duration between
@@ -93,8 +93,8 @@ in frequencies by the following formula:
 \begin{equation}
 \frac{\Delta d_{e}}{\log(f_{L})-\log(f_{H})}=b\label{eq:log-linear}
 \end{equation}
-If speaker/listeners begin at birth with equal experience of all words
-– meaning, none –, then the differences in duration that accrue over
+If speakers/listeners begin at birth with equal experience of all words
+– meaning, none – then the differences in duration that accrue over
 the course of an epoch will be due entirely to the amount of reduction
 that occurs over that epoch. By the time that one epoch has passed,
 the higher frequency word of any pair will have reduced more than
@@ -160,7 +160,7 @@ have proportionally fewer tokens than higher-frequency categories
 will affect the outcome. Other parameters that have the potential
 to alter the outcome include whether or not each individual experience
 is automatically added to memory – or only a certain minimum number,
-or some average of recent experience –, and how quickly older memories
+or some average of recent experience – and how quickly older memories
 decay, being replaced by new experiences. It may be possible, if unlikely,
 that at least one set of parameter values exists that will prevent
 any words reaching floor within the lifetime of the speaker. However,
@@ -181,7 +181,7 @@ means can be derived in the following way. At equilibrium the entrenchment
 force is balanced by the inertial force due to each sub-category's
 attractor. The location of the sub-category mean is the location at
 which the displacement that would occur due to the entrenchment force
-is exactly counter-acted by the displacement that would occur due
+is exactly counteracted by the displacement that would occur due
 to the inertia force. For the non-biased sub-category this equilibrium
 occurs under the following conditions:
 \begin{equation}
@@ -248,7 +248,7 @@ of reasoning.
 
 For a given $p=p_{i}$ (for $p_{i}<1$), the equilibrium location
 of the global mean can be found using Eq. (\ref{eq:Model G-eq}).
-Now imagine that p increases from $p_{i}$ to $p_{j}$. This will
+Now imagine that \emph{p} increases from $p_{i}$ to $p_{j}$. This will
 result in the global mean moving closer to the biased sub-category
 (Eq. (\ref{eq:weighted-means})). A change in the global mean will
 cause a change in the entrenchment force for both sub-categories.
@@ -339,7 +339,7 @@ verifying the result in Eq. (\ref{eq:separation-special case}).
 This material is supplemental to \sectref{subsec:Model-B:-Lengthening}
 of the main text.
 
-For The Pure Process Model, there is a single category, and all tokens
+For the Pure Process Model, there is a single category, and all tokens
 are subject to the same inertial force, in proportion to their distance
 from the single attractor at \emph{N}. Additionally, a proportion
 \emph{p} of randomly selected tokens undergo a lengthening process,
@@ -357,14 +357,14 @@ gives the mean of the biased sub-distribution at time \emph{t,}
 \begin{equation}
 \overline{x_{t}^{B}}^{\prime}=\overline{x_{t}}(1+\alpha)+\beta(N-\overline{x_{t}})\label{eq:Model-B B-Prime}
 \end{equation}
-and Eq. (\ref{eq:Model-B NB-Prime}) give the means of the non-biased
+and Eq. (\ref{eq:Model-B NB-Prime}) gives the means of the non-biased
 sub-distribution at time \emph{t}.
 
 \begin{equation}
 \overline{x_{t}^{NB}}^{\prime}=\overline{x_{t}}+\beta(N-\overline{x_{t}})\label{eq:Model-B NB-Prime}
 \end{equation}
 On average, a proportion \emph{p} of the distribution will be lengthened,
-thus the location of the global mean after lengthening and inertia
+thus the location of the global mean, after lengthening and inertia
 apply, can be expressed as
 \begin{equation}
 \overline{x_{t}}^{\prime}=(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\label{eq:Model-B weight mean}
@@ -399,7 +399,7 @@ Simplifying and collecting terms:
 =\overline{x_{t}}^{\prime}-\varepsilon\overline{x_{t}}^{\prime}+\varepsilon\left[(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\right]
 \end{equation}
 The term $(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}$
-is equivalent to $\overline{x_{t}}^{\prime}$ by Eq (\ref{eq:Model-B weight mean}).
+is equivalent to $\overline{x_{t}}^{\prime}$ by Eq. (\ref{eq:Model-B weight mean}).
 Therefore
 \begin{equation}
 \overline{x_{t}}^{\prime\prime}=\overline{x_{t}}^{\prime}-\varepsilon\overline{x_{t}}^{\prime}+\varepsilon\overline{x_{t}}^{\prime}=\overline{x_{t}}^{\prime}
@@ -519,7 +519,7 @@ x_{i}^{V^{\prime}}=\frac{2x_{i}^{V}}{(1+e^{-k_{V}E})}\label{eq:Speaking rate tra
 \end{equation}
 
 \begin{equation}
-x_{i}^{N\prime}=\frac{2x_{i}^{N}}{(1+e^{-k_{N}E})}\label{eq:Speaking rate transform-1-1-1}
+x_{i}^{N^\prime}=\frac{2x_{i}^{N}}{(1+e^{-k_{N}E})}\label{eq:Speaking rate transform-1-1-1}
 \end{equation}
 
 \end{itemize}
@@ -548,20 +548,20 @@ $\beta$ parameterizes frequency on a scale between 0 and 1.
 \begin{itemize}
 \item Resting activation acts as a perturbation to the expansion force,
 \emph{E}. The mean of the expansion function is shifted ${1}/{4}$
-of a standard deviation for each unit of \emph{f}, where f parameterizes
+of a standard deviation for each unit of \emph{f}, where \emph{f} parameterizes
 frequency:
 \end{itemize}
 \[
-\bar{E}^{\prime}=\bar{E}-f(.25\sigma_{E})
+\overline{E}^{\prime}=\overline{E}-f(.25\sigma_{E})
 \]
 
 \begin{itemize}
 \item The overlap duration for Analysis 2 tokens is a random variable distributed
-according to $\mathcal{\mathscr{N}}\left(.25\bar{x}^{N},\sigma_{x^{N}}\right)$
+according to $\mathcal{\mathscr{N}}\left(.25\overline{x^{N}},\sigma_{x^{N}}\right)$
 \item The probability of Analysis 1 is given by:
 \begin{equation}
 P(a=1)=Ae^{-b(1-Q)}-C\label{eq:segmentation-1-1}
 \end{equation}
 where $Q={x_{i}^{O}}/{x_{i}^{N}}$\emph{ }. For all simulations,
-the constants are set to: $A=1$, $b=2$, and $C=0$
+the constants are set to: $A=1$, $b=2$, and $C=0$.
 \end{itemize}

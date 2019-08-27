@@ -2,16 +2,16 @@
 
 In many implemented exemplar models that include production, unbounded
 iterative biasing is prevented via the elimination of tokens that
-fall in the ambiguous region between two existing categories (\citealp{Wedel2004,Wedel2006,Wedel2008,Blevins2009,DBLP:journals/corr/Tupper14a}).
+fall in the ambiguous region between two existing categories (\citealt{Wedel2004,Wedel2006,Wedel2008,Blevins2009,DBLP:journals/corr/Tupper14a}).
 If the categories are taken to be words, then discarding ambiguous
 tokens acts to maintain a meaning distinction that relies on a minimal
 sound distinction along the given phonetic dimension. The idea that
-sound changes that produce homophony are dispreferred in some way
-has existed within historical linguistics for a long time (e.g., \citealt{Martinet1955}).
+sound changes which result in homophony are dispreferred in some way, 
+has existed within historical linguistics for a long time (e.g. \citealt{Martinet1955}).
 In recent years this notion has been revived and quantified as an
 inverse correlation between the probability of a sound change that
 neutralizes contrast \emph{x}, and the number of words that are differentiated
-only by contrast \emph{x}. This is known as the “functional load”
+only by contrast \emph{x}. This is known as the \emph{functional load}
 of the contrast\footnote{There are many other ways one might define functional load. However,
 it turns out that a simple minimal pair count seems to be the most
 useful of these.} (\citealp{Surendran2006,wedel2013high}). In \citet{Wedel2008},
@@ -58,10 +58,10 @@ class of `innovators' may be required, aided by a class of `early
 adopters' in the actuation and spread of a change (\citealt{milroy1985linguistic}).
 Change may require those with less social power to pay more attention
 to the speech of those with more power, leading to incorrect inferences
-about the source of phonetic variation (e.g., \citealt{Garrett2013}).
+about the source of phonetic variation (e.g. \citealt{Garrett2013}).
 Change may require systematic differences between individual speakers
 in their analysis of ambiguous data, the degree to which they compensate
-for phonetic biases, or some other facet of speech processing (e.g.,
+for phonetic biases, or some other facet of speech processing (e.g.
 \citealp{Beddor2009,yu2013socio}). This paper does not explicitly
 address these aspects of sound change in that it focuses on the mental
 grammar of a single individual. The approach taken here, however,
@@ -91,7 +91,7 @@ phonologically identical sounds across different languages (\citealt{Keating1985
 Distributions would also be predicted to spread out on dimensions
 lacking a contrastive segment distinction. Although there is evidence
 that the absence of contrast leads to greater variation in pronunciation
-along that dimension (e.g., \citealt{choi1995acoustic}), this variation
+along that dimension (e.g. \citealt{choi1995acoustic}), this variation
 is not unlimited. \citet{Baker2011}, for example, found a number
 of differences in how speakers produced American English “r”
 sounds. However, those differences resulted in little to no acoustic
@@ -123,7 +123,7 @@ the force pulling it back. This has the desired effect of bounding
 movement in either direction, while still allowing the category to
 shift as a whole. If \emph{I} is the only force acting, then the tokens
 will eventually settle at the equilibrium point \emph{N}, where the
-change in \emph{$\bar{x}$} is 0. \emph{N} can also be characterized
+change in \emph{$\overline{x}$} is 0. \emph{N} can also be characterized
 as the optimum of a function with a positive derivative when \emph{x}
 is less than \emph{N}, and a negative derivative, when \emph{x} is
 greater than \emph{N}. Regardless of the location of \emph{x}, it
@@ -149,7 +149,7 @@ sections.
 
 \begin{figure}[H]
 \centering{}\includegraphics[scale=0.3]{figures/BaselineModel10000iter.pdf}\caption{\label{fig:Model2:LengtheningProcess}Soft-Target Model: Increasing
-bias function. Single category:Single target. White: tokens produced
+bias function. Single category: Single target. White: tokens produced
 in non-biasing contexts. Black: tokens produced in biasing contexts.
 x-axis: z-normed \emph{x} dimension. Observation occurs after 10,000
 model cycles.}
@@ -170,7 +170,7 @@ for the allophonic variant that occurs in that context. Using the
 same notation, a \noun{state} model instantiates the following relationship:
 $/S^{B}/\rightarrow[S{}^{B}]$ in context \emph{B}. This indicates
 that $S^{B}$ is stored, or underlying, rather than generated. A given
-\textsc{state} could consist of `long', or `lengthened' tokens, but
+\textsc{state} could consist of `long', or `lengthened', tokens but
 does not properly involve `lengthening'. 
 
 \section{\label{sec:Model-Interpretation}Model space}
@@ -186,11 +186,11 @@ target, as in (\ref{eq:Length Attractor}) (cf. \citealt{soskuthy2013phonetic}).
 \begin{equation}
 L(x_{i})=\alpha(L-x_{i})\label{eq:Length Attractor}
 \end{equation}
-This model, with one target for non-biased tokens, and one for biased
+This model, with one target for non-biased tokens and one for biased
 tokens, can also be shown to produce stable outcomes. The no-target
 \noun{process} model, the soft-target \noun{process} model, and the
 \noun{state} model, however, differ with respect to their theoretical
-consistency, and thus, linguistic interpretability. 
+consistency and thus linguistic interpretability. 
 
 Model 2, from \sectref{subsec:Phrase-Final Lengthening}, re-labelled
 as Model A in Table~\ref{tab: Model Comparison-1}, is a linguistically
@@ -198,7 +198,7 @@ interpretable model. There is a single category from which tokens
 are selected at random, either to be produced in biasing contexts,
 in which case they are lengthened, or to be produced in non-biasing
 contexts, in which case they are unchanged. Model B, with a soft target
-at the location of the non-biased, underlying category is also consistent.
+at the location of the non-biased, underlying category, is also consistent.
 All tokens feel a pull towards this underlying target, but those that
 happen to be produced in a biasing context are also subject to a force
 that lengthens them during production. Model C, however, the \textsc{state}
@@ -225,7 +225,7 @@ second target, \emph{L}, exists without an underlying category with
 which that target can be associated. With the distribution initialized
 at \emph{N}, the effect is for biased tokens to be moved an arbitrarily
 small distance, $\alpha(L-x)$, towards that second target during
-production\footnote{As a \noun{process}, incrementality has a straightforward interpretation;
+production.\footnote{As a \noun{process}, incrementality has a straightforward interpretation:
 a given token is shifted, or lengthened, by a fixed proportion of
 its current length. But in a \textsc{state} model, in which all tokens
 are initialized at one target, it is not clear what mechanism would
@@ -236,10 +236,10 @@ a given category closer together, they are different in important
 ways. The use of the category mean in the entrenchment function stands
 in for the sum of the forces that act between individual tokens, maintaining
 category cohesion (the same effect can be achieved by averaging over
-multiple tokens in production (e.g., \citealt{Pierrehumbert2000,Wedela})).
+multiple tokens in production (e.g. \citealt{Pierrehumbert2000,Wedela})).
 The soft target, or inertia force, on the other hand, references a
 fixed target location that is specified independently of the current
-distribution. }. Of the three models, only Model B is both stable (bounded), and
+distribution. } Of the three models, only Model B is both stable (bounded) and
 theoretically consistent. 
 
 Model C, however, can be made theoretically consistent by introducing
@@ -249,17 +249,17 @@ different sub-category. This is Model G in Table~\ref{tab: Model Comparison},
 which is the 2-level model analog of Table~\ref{tab: Model Comparison-1}.
 The remaining models in this table are all theoretically problematic
 in different ways. Model D is the two sub-category counterpart of
-Model B. while Model B was theoretically consistent, the introduction
+Model B. While Model B is theoretically consistent, the introduction
 of a separate sub-category for biased tokens in Model D creates a
 representational paradox: a category with no target, to which lengthening
 continuously applies. Model D is also unbounded. Model E re-creates
-the two-target paradox of Model C. And F is the hybrid \noun{process}+\emph{state}
-model\footnote{If double specifications are possible (e.g., \textsc{process} + \textsc{state}),
+the two-target paradox of Model C. Finally, F is the hybrid \noun{process}+\emph{state}
+model.\footnote{If double specifications are possible (e.g. \textsc{process} + \textsc{state}),
 then the total set of possible models includes the Single-Category
 \textsc{process}+\textsc{state} model, and the set of non-biased No-Target
 models, among others. However, these other models all contain a superset
 of the representational inconsistencies already described, and therefore
-are not included.}.
+are not included.}
 
 \begin{table}[h]\footnotesize
 \caption{2-Level Model Space\label{tab: Model Comparison}}
@@ -274,8 +274,8 @@ G & \textsc{State} & $\alpha(L-x)$ & Target & $\beta(N-x)$ & Y & Y\tabularnewlin
 \end{tabular}
 \end{table}
 
-Only two viable candidates emerge from the full set of models. A pure
-\textsc{process} model with a single target (B), and a pure \textsc{state}
+Only two viable candidates emerge from the full set of model: a pure
+\textsc{process} model with a single target, (B), and a pure \textsc{state}
 model (G). In general terms, these results show us that \textsc{process}
 and \textsc{state} models are incompatible with one another. If biased
 tokens have a separate representational status, this implies that
@@ -290,23 +290,23 @@ this would be equivalent to a phonological rule of the form:
 \end{covexamples}
 Although (\ref{Process-+-State:}) is linguistically ill-formed, it
 is equivalent to the feedback loop at the heart of the basic exemplar
-model\footnote{It should be noted that, as far as I am aware, no one has actually
+model.\footnote{It should be noted that, as far as I am aware, no one has actually
 proposed the context-dependent exemplar models in \chapref{ch:The-Exemplar-Model}.
 They are what I take to be the logical extension of the context-free
-exemplar model of \citet{Pierrehumbert2000}.}. Cumulativity of small differences is only possible if the bias effects
+exemplar model of \citet{Pierrehumbert2000}.} Cumulativity of small differences is only possible if the bias effects
 in production (contextually determined allophony) are stored (\noun{state}),
 rather than being stripped away during perception. Storage of allophonic
 detail implies that the biasing context itself is discarded, or at
 least not used to recover the underlying form. In production, however,
 the \textsc{process} model requires knowledge of the context that
 triggers biasing. In other words, the allophonic rule is available
-in production, but not in perception\footnote{The alternative is that both the unnormalized surface forms, and their
+in production, but not in perception.\footnote{The alternative is that both the unnormalized surface forms and their
 production context are stored, or incorporated into the category label
 in some way. Even if so, it is still not clear why an allophonic rule
 would continue to apply. Furthermore, if prior specification of complex
 sub-structure is required (and, in the limit, a unique category for
-every token) the exemplar framework does not seem to offer much, if
-anything, in terms of explanatory power. }. 
+every token), the exemplar framework does not seem to offer much, if
+anything, in terms of explanatory power. }
 
 Another way to characterize this theoretical incompatibility is that
 a \textsc{process} model implies that normalization takes place, while
@@ -326,12 +326,12 @@ allophonic rules apply. Again, the \textsc{state} aspect is only partial.
 The fact that these are sub-categories rather than completely independent
 categories introduces a connection between the biased and non-biased
 tokens which implies that the relationship between them is known,
-and therefore, that the allophonic transformation is known. Two entirely
+and therefore that the allophonic transformation is known. Two entirely
 independent categories would preclude change entirely. 
 
 \section{\label{sec:Model-Behavior}Consistent and convergent models of sound change}
 
-This section is devoted to an exhaustive analysis of the ends states
+This section is devoted to an exhaustive analysis of the end states
 of the two theoretically consistent and bounded models: the Pure Process
 Model (B), and the Pure State Model (G). These results will be provided
 in the form of two parameters: the category means along the dimension
@@ -351,17 +351,17 @@ comparison to that work.
 The Pure State Model contains one target for biased tokens, and a
 distinct target for non-biased tokens. Figure \ref{fig:Model G} provides
 an illustration of the forces acting at some model time \emph{t},
-on exemplar categories modeled as Normal functions. As will be shown
+on exemplar categories modeled as normal functions. As will be shown
 below, the means of both sub-categories can be guaranteed to lie somewhere
 between the two targets at \emph{N} and \emph{L}. Each sub-category
 is subject to the inertia associated with its own target, acting to
 pull the two apart. Membership in a superset category is implemented
 via the entrenchment force, which pulls both in the direction of the
-global mean, and thus towards one another\footnote{\citet{soskuthy2013phonetic} links sub-categories by applying phonetic
+global mean, and thus towards one another.\footnote{\citet{soskuthy2013phonetic} links sub-categories by applying phonetic
 biasing probabilistically to both, but with the biased sub-category
-more strongly weighted. }. In this illustration, the relative number of tokens produced in
+more strongly weighted. } In this illustration, the relative number of tokens produced in
 biasing versus non-biasing contexts is represented by the heights
-of the Normal curves. Because the proportion of biasing contexts is
+of the normal curves. Because the proportion of biasing contexts is
 less than 50\% in this example, the global mean (indicated by the
 dashed line) is closer to the mean of the non-biased distribution. 
 
@@ -377,7 +377,7 @@ Entrenchment, (\ref{eq:Inertia-2}) Inertia (attractor) at \emph{N},
 and (\ref{eq:Length Attractor-2}) Inertia (attractor) at\emph{ L}.
 A small random error term is also included in all models. 
 \begin{equation}
-E(x_{i})=\epsilon(\bar{x}-x_{i})\label{eq:Entrenchment-2}
+E(x_{i})=\epsilon(\overline{x}-x_{i})\label{eq:Entrenchment-2}
 \end{equation}
 \begin{equation}
 I(x_{i})=\beta(N-x_{i})\label{eq:Inertia-2}
@@ -387,7 +387,7 @@ L(x_{i})=\alpha(L-x_{i})\label{eq:Length Attractor-2}
 \end{equation}
 In order to estimate the behavior of this model under various conditions
 we will make the simplifying assumption that each sub-category is
-specified by a Normal curve with variable mean, but fixed standard
+specified by a normal curve with variable mean, but fixed standard
 deviation. This allows us to use the mean of each sub-category as
 a proxy for its global behavior. To determine the stable model outputs,
 we use the fact that forces must balance at this equilibrium point,
@@ -509,7 +509,7 @@ section that the Process Model is only stable for certain parameter
 values. The behavior of the global mean, and the average separation
 between biased and non-biased productions, will be derived as before.
 The same simplifying assumption that the category can be approximated
-as a Normal distribution with fixed variance will also be made. However,
+as a normal distribution with fixed variance will also be made. However,
 it should be noted that this assumption is less justified for the
 one-category model due to the fact that biased and non-biased variants
 will separate, creating a lumpier distribution, and likely an increase
@@ -544,22 +544,22 @@ equally, because all tokens are equally far from \emph{N} on average.
 Lengthening, applied only to a subset of tokens, splits the distribution
 apart. Before entrenchment applies, the mean values for the observed
 productions ($\overline{x_{t}^{B}}^{\prime}$, mean of biased productions
-in Panel 2; $\overline{x_{t}^{NB}}^{\prime}$ mean of non-biased productions
+in Panel 2; $\overline{x_{t}^{NB}}^{\prime}$, mean of non-biased productions
 in Panel 2), can each be given as a function of the global mean at
-time $t$, $\bar{x_{t}}$:
+time $t$, $\overline{x_{t}}$:
 \begin{equation}
-\overline{x_{t}^{B}}^{\prime}=\bar{x_{t}}(1+\alpha)+\beta(N-\bar{x_{t}})\label{eq:Biased}
+\overline{x_{t}^{B}}^{\prime}=\overline{x_{t}}(1+\alpha)+\beta(N-\overline{x_{t}})\label{eq:Biased}
 \end{equation}
 \begin{equation}
-\overline{x_{t}^{NB}}^{\prime}=\bar{x_{t}}+\beta(N-\bar{x_{t}})\label{eq:Non-biased}
+\overline{x_{t}^{NB}}^{\prime}=\overline{x_{t}}+\beta(N-\overline{x_{t}})\label{eq:Non-biased}
 \end{equation}
 Applying entrenchment does not affect the global mean, only the absolute
 locations of the sub-distribution means, and their separation. Therefore,
 the mean in Panel 3 is identical to the mean from Panel 2. This mean
-($\bar{x_{t}}^{\prime}$) is given by the weighted average of the
+($\overline{x_{t}}^{\prime}$) is given by the weighted average of the
 means of the observed production variants: 
 \begin{equation}
-\bar{x_{t}}^{\prime}=(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\label{eq: G weighted mean}
+\overline{x_{t}}^{\prime}=(1-p)\overline{x_{t}^{NB}}^{\prime}+p\overline{x_{t}^{B}}^{\prime}\label{eq: G weighted mean}
 \end{equation}
 Equilibrium is achieved when continued iterations fail to change the
 locations of the means. This means that they should be unaffected
@@ -595,7 +595,7 @@ only stable if the lengthening strength ($\alpha$) is not too great,
 and the percentage of biasing contexts ($p$) is not too large, relative
 to the attractor strength ($\beta$).
 
-To calculate the second quantity of interest: the dependence of sub-distribution
+To calculate the second quantity of interest, the dependence of sub-distribution
 separation on \emph{p,} the effect of entrenchment must be included.
 Entrenchment acts to bring all tokens back towards the global mean
 by an amount proportional to their distance from that mean (Panel
@@ -636,15 +636,15 @@ but not both. That is to say, only one stable state is possible, and
 the model either starts in that state, in which case it remains there
 for all time, or inevitably arrives in that state from any other starting
 conditions. In \citet{Garrett2013} there are two different modes
-of processing\footnote{These are likened to “speech” and “non-speech” processing
+of processing,\footnote{These are likened to “speech” and “non-speech” processing
 modes (\citealt{liberman1967perception}); individual speakers may
 switch between the two modes, or different speakers may operate consistently
-in one or the other mode (e.g. \citealt{yu2013socio}). }, resulting in essentially two different models: one in which normalization
+in one or the other mode (e.g. \citealt{yu2013socio}). } resulting in essentially two different models: one in which normalization
 occurs, which is stable, and one in which normalization is “turned
 off”, leading to change (the latter model is not implemented, but
 would lead to unbounded shift without an additional mechanism). \citet{Kirby2014}
 is similar in that two different outcomes are possible, one for a
-`misparsing' mode, and one for accurate parsing (In the `misparsing'
+`misparsing' mode, and one for accurate parsing (in the `misparsing'
 mode, merger is prevented by a stage of hypothesis selection in which
 a Bayesian learner updates phonetic cue weights so as to optimize
 categorization accuracy). 
@@ -679,9 +679,8 @@ variants, are possible for independent reasons. Words go in and out
 of style, and the frequency of use of any given word is expected to
 change over time. In turn, changes in frequency at the word level
 also affect the frequency of occurrence of the phonemes that make
-up the word. For changes that happen to affect a group of words with
-the relevant allophonic environment, a change in token proportion
-between multiple allophones of a given phoneme could result. 
+up the word. A change in allophone frequency could also result if
+the words affected happened to contain the same allophonic environment. 
 
 The model of vowel lengthening in \citet{soskuthy2013phonetic} was
 the basis for the gradient context-dependent model first introduced
@@ -694,25 +693,25 @@ as the actuator of change. \citet{soskuthy2013phonetic} is actually
 closest to Model E (Section \ref{sec:Model-Interpretation}), as a
 two-target \noun{state} model. The vowel-level category is modeled
 as a mixture of Gaussians, namely the sub-category of variants that
-occur in the lengthening context, and the sub-category of variants
+occur in the lengthening context and the sub-category of variants
 that occur in the non-lengthening context. Instead of global entrenchment,
 the link to the superset category is implemented by applying lengthening
 stochastically to tokens chosen from both sub-categories, but with
 the `long' sub-category more strongly weighted. Additionally, a “centering
 bias”, implemented as an attractor at \emph{N}, is used to prevent
-unbounded dispersion\footnote{This is necessary to counteract the contrast maintenance pressure
+unbounded dispersion.\footnote{This is necessary to counteract the contrast maintenance pressure
 that pushes categories away from one another, via elimination of ambiguous
-tokens (\citet{Wedel2008} and \citet{Blevins2009}). }. The mathematical form of the attractor function is equivalent to
+tokens (\citet{Wedel2008} and \citet{Blevins2009}). } The mathematical form of the attractor function is equivalent to
 the soft target first introduced in Section \ref{subsec:Soft-Targets}:
 an inertial force that applies when tokens are perturbed from an underlyingly
 specified position, acting to pull them back towards that position.
 This results, functionally, in two targets for the biased sub-category
-(one at \emph{N} and one at \emph{L})\footnote{\citet{Soskuthy2015} employs a similar architecture. There is an
+(one at \emph{N} and one at \emph{L}).\footnote{\citet{Soskuthy2015} employs a similar architecture. There is an
 explicit target for only the biased sub-category, but all tokens are
 affected by the same centering force. In this model, hard thresholds
 at 0 and 1 act to force both distributions back towards the center,
 similarly to how a target attracts tokens from either direction. These
-attractors are critical to achieving stable states in both models.}. 
+attractors are critical to achieving stable states in both models.}
 
 Sóskuthy's model therefore differs from the Pure State Model implemented
 in Section \ref{subsec:Lengthening-as-State}. The actual model behavior,
@@ -722,8 +721,8 @@ occurs relative to the non-biasing context – act to shift the model
 from one stable state to another. The global mean of the vowel category
 always increases with increasing \emph{p}, but the separation between
 the `lengthened' and `unlengthened' variants can increase, decrease,
-or stay the same, depending on other model parameters\footnote{In Sóskuthy's models there is a somewhat more complex dependence on
-\emph{p}. }. Under the assumption that parameter values are fixed within a given
+or stay the same, depending on other model parameters.\footnote{In Sóskuthy's models there is a somewhat more complex dependence on
+\emph{p}. } Under the assumption that parameter values are fixed for a given
 speaker, only one of those outcomes will actually be possible for
 each individual. 
 
@@ -756,7 +755,7 @@ from the non-biased part of the distribution. In fact, what is needed
 to model phoneme split with the current set of models is precisely
 a mechanism that will enact the necessary representational changes
 needed to convert a \noun{process} model (allophony) to a \noun{state}
-model (contrast)\footnote{Going from a \noun{state} to a \noun{process} model, on the other
+model (contrast).\footnote{Going from a \noun{state} to a \noun{process} model, on the other
 hand, requires that independent categories become linked through the
 inference of a predictable relationship between them. In one sense,
 phoneme merger is clearly the opposite of phoneme split in that the
@@ -766,10 +765,10 @@ an allophonic relationship. As far as I am aware, merger is taken
 to be the result of phonetic overlap among distinct categories (that
 may or may not share allophones) involving the wholesale replacement
 of one category with another occupying the exact same phonetic space.
-A change from a \noun{state} to a \noun{process} therefore, may be
+A change from a \noun{state} to a \noun{process}, therefore, may be
 a different kind of change, and perhaps one that has no exact correspondent
 in the standard taxonomy of sound change. This is an intriguing avenue
-for future work.}.
+for future work.}
 
 In addition to the question of how the transition from \noun{process
 }to\noun{ state} can occur, there is the separate question of the
@@ -792,7 +791,7 @@ therefore, which natural class is associated with the rule must also
 be learned. Thus, it is not unlikely that the natural class itself
 is learned, or formed, at the time the rule is learned. This view
 is further supported by the possible existence of “unnatural”
-classes (e.g., \citealt{Mielke2008}).
+classes (e.g. \citealt{Mielke2008}).
 
 In the case of vowel lengthening, the relevant class of segments that
 undergo the rule consists of the natural class that specifies all
@@ -800,26 +799,26 @@ and only vowels. The class of segments that act as the trigger, or
 environment, for the rule is the set of all non-continuant non-nasal
 voiced segments. In both the \noun{state} and \noun{process} models
 this sub-category is explicitly represented, and in fact, the models
-are initialized with this representation\footnote{It is worth noting that {[}\emph{vowels before everything else}{]}
+are initialized with this representation.\footnote{It is worth noting that {[}\emph{vowels before everything else}{]}
 does not actually comprise a natural class due to its disjoint nature,
 consisting of the union of the following natural classes: {[}\emph{vowels
 before continuant}s{]}, {[}\emph{vowels before nasals}{]}, and {[}\emph{vowels
 before voiceless non-continuants}{]}. In descriptions of the phenomenon,
 the comparison class is typically non-continuants that are voiceless,
 and this is likely to be assumed as the relevant second sub-category
-for modeling purposes.}. This assumption begs the sound change question to a large extent.
+for modeling purposes.} This assumption begs the sound change question to a large extent.
 If there was a prior period in which no rule of vowel lengthening
 existed, then the more interesting question might be where it came
-from in the first place. In other words, how did precisely this natural
+from in the first place? In other words, how did precisely this natural
 class, this sub-category of phonological units, become linguistically
-active in this language. But because this is the starting point for
-these models, there is no mechanism for generating new allophonic
-relationships, or for eliminating them altogether\footnote{Treating sub-categorization as a phonetic, rather than a phonemic,
+active in this language. Because this is the starting point for
+these models, however, there is no mechanism for generating new allophonic
+relationships, or for eliminating them altogether.\footnote{Treating sub-categorization as a phonetic, rather than a phonemic,
 distinction does not solve this problem if the necessary structure
 is still stipulated, and the prior existence of the allophonic rule
-is assumed (e.g. \citealp{dillon2013single}).}. 
+is assumed (e.g. \citealp{dillon2013single}).}
 
-How abstract categories are formed in the first place, and how many,
+How abstract categories are formed in the first place, how many,
 with what kinds of sub-structures, are questions that are far from
 being definitively answered (see, among others, \citet{Peperkamp2006,dillon2013single,feldman2009learning,mcmurray2011information,goldsmith2009learning}).
 It is reasonable to expect that greater knowledge of how categories

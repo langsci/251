@@ -23,9 +23,9 @@ structures change and, by extension, how they fail to change, i.e.,
 exhibit stable variation.
 
 The goal of this work is to determine what types of mental structures
-may be sufficient, and possibly, necessary in order to capture certain
+may be sufficient, and, possibly, necessary in order to capture certain
 linguistic phenomena at a computational level of description (in the
-sense of \citet{marr1982vision}). The approach is twofold: 1) to
+sense of \citealt{marr1982vision}). The approach is twofold: 1) to
 test a number of proposed structures and mechanisms by implementing
 them in simple computational models; and 2) to test the explanatory
 adequacy of a number of existing models by transforming their implementations
@@ -45,8 +45,8 @@ about the phenomenon of interest. That is, the model must be able
 to “scale up”. There is no algorithm, however, by which we can
 establish scalability ahead of time in building our toy models. Thus,
 it is critical that any model be made consistent with what is known
-more globally about the phenomenon of interest (what I will call imposing
-boundary conditions), and not just the small piece it was designed
+more globally about the phenomenon of interest (what I will refer to as ``imposing
+boundary conditions''), and not just the small piece it was designed
 to explain. 
 
 As a series of models are developed and tested, they will be assessed
@@ -84,27 +84,27 @@ chapter it is shown that only two models from this set satisfy the
 criteria of being both representationally consistent and bounded.
 The possible states for each of the two models is then fully derived.
 These results are related to existing models, and the types of sound
-change that they are capable of capturing. In \chapref{ch:Perception-Production}
+change that they are capable of capturing. In \chapref{ch:Perception-Production}, 
 it is shown that the typical implementational simplification, in which
 perception and production tokens are equated, is not only implausible,
 but obscures a fundamental flaw in the mechanism for change. Iterative
 change no longer follows once an explicit mapping between acoustic
 values and articulatory gestures is required. \chapref{ch:Phoneme-Split}
-is devoted to a type of change no previously modeled: the genesis
+is devoted to a type of change not previously modeled: the genesis
 of a new phoneme category. Adopting a theory in which the mapping
 from perception to production is taken to be inherently ambiguous,
 I offer a proposal for an implemented model in which variable sub-lexical
 segmentation results in mixed representations. Change in the model
 is taken to be change in the distribution of already existing variants.
 The work is summarized in \chapref{ch:Summary},
-where other types of sound change, and future avenues of research
+where other types of sound change, and future avenues of research,
 are briefly discussed. 
 
 \section{Abstract representations}
 
 One of the basic representational divisions that can be made in a
 theory of cognition is between what is stored in memory versus what
-is not stored, and thus, must be computed (or generated). The choice
+is not stored, and thus must be computed (or generated). The choice
 about what aspects of a linguistic pattern to treat as stored versus
 generated will determine, to quite a large extent, what we take to
 be the possible dimensions of synchronic variation cross-linguistically,
@@ -118,7 +118,7 @@ It should be noted that mainstream synchronic linguistics is heavily
 biased towards conceptualizing phenomena as generating processes:
 “vowel nasalization”, “final de-voicing”, “initial
 aspiration”, etc.\footnote{Even if these are merely terminological conveniences, they color the
-way we think about, and model, these phenomena.}. This is directly linked to a conception of mental representations
+way we think about, and model, these phenomena.} This is directly linked to a conception of mental representations
 as maximally abstract. In other words, only unpredictable information
 should be stored (such as the arbitrary sound units associated with
 a given lexical item), while all predictable information should be
@@ -127,12 +127,12 @@ it has also been explicitly advocated for much more recently in various
 theories of underspecification (e.g., \citealt{archangeli1988aspects,Steriade1995a}).
 More commonly, however, it is an unexpressed assumption that the analysis
 that maximizes the predictive power of the grammar is the preferred
-one\footnote{Within Optimality Theory, this pressure is, in a sense, even stronger,
+one.\footnote{Within Optimality Theory, this pressure is, in a sense, even stronger,
 because all possible words must be filtered through the grammar (not
 just the selected URs). However, Lexicon Optimization allows for known
 lexical items to be generated from faithful inputs allowing for some
 predictability to be retained in the lexicon (\citealt{Prince2004}:
-Ch. 9). }.
+Ch. 9). }
 
 For example, the pronunciation of the word “lamb” in English
 can be written with the following series of phonetic symbols: {[læ̃m]},
@@ -147,7 +147,7 @@ Under this theory, the lexical item {/læm/} is first retrieved,
 and then transformed to {[læ̃m]} via the application of
 this rule. 
 
-This hypothesis in fact, implies that the lexical entry is comprised
+This hypothesis in fact implies that the lexical entry is comprised
 of a string of smaller units, the phonemes {/l/}, {/æ/},
 and {/m/}, that are concatenated together in order to produce
 the word. The currently standard view of phonological structure is
@@ -162,7 +162,7 @@ as part of an abstract category {/æ/}, but also as part
 of the word “lamb”. The variant, or allophone, of the phoneme
 that occurs in that word is nasalized. However, the rule that nasalizes
 the {/æ/} is assumed to operate at a more abstract level,
-i.e., before any nasal, in any word and, in fact, to apply to any
+i.e., before any nasal, in any word and, in fact, on any
 vowel. See (\ref{allophony:nasal vowel}). 
 \begin{covexample}
 \emph{\label{allophony:nasal vowel}/vowel/ $\rightarrow$ {[}nasalized
@@ -170,8 +170,8 @@ vowel{]}/\_\_ {[}nasal{]}}
 \end{covexample}
 Many phonemes can be said to have multiple phonological allophones,
 and all phonemes have at least multiple phonetic allophones. In the
-word {[tʰæˑɡ˺}{]} (“tag”), for example, the first
-sound can be characterized as the aspirated allophone of {/t/}
+word “tag” {[tʰæˑɡ˺}{]}, for example, the first
+sound can be characterized as the aspirated allophone of {/t/}'
 that is generated whenever a voiceless plosive occurs in the onset
 of a stressed syllable; the second sound is the lengthened allophone
 of {/æ/} that is generated whenever a vowel precedes a voiced
@@ -269,7 +269,7 @@ pronunciation can be seen to incrementally increase across speakers
 of different ages in a “sound change in progress”. These small
 differences are reflected in what may be stable differences between
 different dialects, between male and female speakers, between speakers
-of higher socioeconomic and lower socioeconomic status, etc.. It is
+of higher socioeconomic and lower socioeconomic status, etc. It is
 now widely accepted, in fact, that the pool of phonetic variants that
 exists across a heterogeneous population of speakers provides the
 basis for future sound changes (e.g., \citealt{Guy2008}).
@@ -281,7 +281,7 @@ of sound change. Exemplar models were first developed in the field
 of psychology, in order to reflect a number of insights about human
 memory and categorization. Rather than having clear, definable boundaries,
 many mental categories seemed to function much more as though they
-were a reflection of their current members (e.g., \citet{Rosch1977}).
+were a reflection of their current members (e.g., \citealt{Rosch1977}).
 Categorization of novel items was less a question of logical inference,
 than of similarity to known instances. Furthermore, many dimensions
 of similarity were potentially implicated, not all of which were relevant
@@ -320,8 +320,8 @@ Because the relationship between the acoustic speech signal and the
 structural units of language is a non-linear, many-to-many mapping,
 there must always be a theoretical trade-off of this kind. For an
 easy classification algorithm, generative theory requires complex
-pre-processing in the form of a normalization procedure. For little,
-to no, pre-processing, exemplar theory requires a complex classification
+pre-processing in the form of a normalization procedure. For little
+to no pre-processing, exemplar theory requires a complex classification
 algorithm. In the modeling work that follows we will adopt the non-trivial
 assumption that classification is perfect – that all tokens are recognized
 as members of their intended category. The complexity, however, will
