@@ -4,21 +4,21 @@ One of the earliest exemplar models within linguistics, \citet{Goldinger1996}
 (adapting \citealt{hintzman1984minerva}), was designed to capture the
 effect of past experience on current perception. In this model, new
 tokens are experienced and added to memory in the following way. First,
-the n-dimensional similarity between a novel (`probe') token and all
+the n-dimensional similarity between a novel (``probe'') token and all
 members of a given category is calculated. The overall degree of
 similarity will determine whether a given probe is recognized or not.
-The similarity matrix is, in turn, used to create an `echo' of the
+The similarity matrix is, in turn, used to create an ``echo'' of the
 probe: the average of the values of each stored token, along each
 dimension, weighted by the similarity of that token to the probe. This echo, rather
 than the probe itself, is what is then added to memory. These properties
 allow the model to simulate the phenomenon whereby listeners often
-mistakenly `remember' tokens that are particularly `good', or prototypical,
+mistakenly ``remember'' tokens that are particularly ``good'', or prototypical,
 members of a category, even when they have never actually experienced
 those tokens. Goldinger's model also introduced a production component
 – a seemingly minimal extension in which a stored echo can be selected
-for `readout'. Goldinger is explicit about assuming that the articulations
+for ``readout''. Goldinger is explicit about assuming that the articulations
 needed to produce a given auditory token can be accurately reconstructed
-from the acoustics of that token (and thus directly `read out' from
+from the acoustics of that token (and thus directly ``read out'' from
 the stored perception token). This assumption would be implicitly
 adopted in most of the work that followed. 
 
@@ -236,7 +236,7 @@ High-frequency category. Black bars: Low-frequency category. }
 Because these models rely on random processes, the outcome is not
 guaranteed to be identical each time the model is run. To evaluate
 models of this kind, one conducts a number of independent identical
-`experiments' (trials) that consist of running the model with the
+``experiments'' (trials) that consist of running the model with the
 same starting conditions, and the same parameters, for the same number
 of iterations. Results are then averaged over the set of trials. In
 the first set of simulations, 500 model trials were run for 1000 iterations
@@ -419,15 +419,15 @@ in Section \ref{subsec:Model-2:-Lengthening}.
 
 Model 3 implements a binary production bias, albeit with an error
 term that maintains a small amount of variance. All tokens produced
-in the biasing context are initialized with a mean at the `+' value
+in the biasing context are initialized with a mean at the ``+'' value
 on dimension \emph{x}, while all tokens produced in the non-biasing
-context are initialized at the `\textminus' value. See \figref{fig:binary-Starting-Distribution}.
+context are initialized at the ``\textminus'' value. See \figref{fig:binary-Starting-Distribution}.
 As before, all tokens belong to the same category; the different colors
 are for illustrative purposes only, allowing us to track the production
 context during the observation cycle. Because the bias is uni-directional,
 and biasing is categorical, all tokens quickly shift to the biased
 {[}+{]} value. Once a token has a value of /+/ it cannot be biased
-further, nor can it be `un-biased'. This is shown in \figref{fig:binary-1000iter},
+further, nor can it be ``un-biased''. This is shown in \figref{fig:binary-1000iter},
 where we can see that previously biased tokens remain at {[}+{]} even
 if they are subsequently produced in a non-biasing context (white
 bars at {[}+{]} location). This model is, in fact, bounded, because
