@@ -117,7 +117,7 @@ biasing dimension \emph{x}.
 I(x_{i})=\beta(N-x_{i})\label{eq:Inertia Force}
 \end{equation}
 When the category is instantiated with a mean at \emph{N} ($z=0$),
-$I(x)$ can be conceptualized as a type of inertia, acting to keep
+$I(x_{i})$ can be conceptualized as a type of inertia, acting to keep
 tokens in place. The further a token moves from the target, the stronger
 the force pulling it back. This has the desired effect of bounding
 movement in either direction, while still allowing the category to
@@ -148,10 +148,10 @@ important as we continue to explore the modeling space in the following
 sections. 
 
 \begin{figure}[H]
-\centering{}\includegraphics[scale=0.3]{figures/BaselineModel10000iter.pdf}\caption{\label{fig:Model2:LengtheningProcess}Soft-Target Model: Increasing
-bias function. Single category: Single target. White: tokens produced
+\centering{}\includegraphics[scale=0.3]{figures/BaselineModel10000iter.pdf}\caption{\label{fig:Model2:LengtheningProcess}Soft-Target Model with increasing
+bias function. White: tokens produced
 in non-biasing contexts. Black: tokens produced in biasing contexts.
-x-axis: z-normed \emph{x} dimension. Observation occurs after 10,000
+z-normed \emph{x} dimension. Observation occurs after 10,000
 model cycles.}
 \end{figure}
 
@@ -525,7 +525,7 @@ production) within the lighter one (subset of tokens non-biased during
 production). 
 
 \begin{figure}[h]
-\includegraphics[width=0.75\textwidth]{figures/Model1Behavior.pdf}\caption{\label{fig:Derivation}Schematic of forces for \noun{process} model}
+\includegraphics[width=0.50\textwidth]{figures/Model1Behavior.pdf}\caption{\label{fig:Derivation}Schematic of forces for \noun{process} model}
 \end{figure}
 
 The production value of any token at any time \emph{t} can be calculated,
