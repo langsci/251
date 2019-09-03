@@ -83,8 +83,8 @@ And,
 We don't know what the amount of reduction over 1 epoch is. But we
 do have an idea of the size of the \isi{frequency} effect: word duration
 as a function of \isi{frequency} (log \isi{frequency} is typically what is plotted
-in order to make the \isi{frequency} distribution closer to Normal (see
-e.g. \citet{gahl2012reduce})). If we assume a linear relation between
+in order to make the \isi{frequency} distribution closer to Normal, see
+e.g. \citealt{gahl2012reduce}). If we assume a linear relation between
 word duration and log \isi{frequency}, then for each unit change in log
 \isi{frequency}, the difference in word duration should be equal to a constant
 value (\emph{b}). Thus, the predicted difference in duration between
@@ -222,18 +222,24 @@ terms:
 \end{equation}
 
 \begin{equation}
-\frac{\overline{x_{E}}(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon\overline{x_{E}}-(\beta+\varepsilon)p\varepsilon\overline{x_{E}}}{(\beta+\varepsilon)(\alpha+\varepsilon)}=\frac{(1-p)\beta N}{\beta+\varepsilon}+\frac{p\alpha L}{\alpha+\varepsilon}
+\begin{aligned}[t]
+&\frac{\overline{x_{E}}(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon\overline{x_{E}}-(\beta+\varepsilon)p\varepsilon\overline{x_{E}}}{(\beta+\varepsilon)(\alpha+\varepsilon)}\\
+= &\frac{(1-p)\beta N}{\beta+\varepsilon}+\frac{p\alpha L}{\alpha+\varepsilon}
+\end{aligned}
 \end{equation}
 
 \begin{equation}
 \begin{aligned}[t]
 & \frac{\overline{x_{E}}(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon\overline{x_{E}}-(\beta+\varepsilon)p\varepsilon\overline{x_{E}}}{(\beta+\varepsilon)(\alpha+\varepsilon)}\\
-= &\frac{(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)}{(\alpha+\varepsilon)(\beta+\varepsilon)}
+= & \frac{(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)}{(\alpha+\varepsilon)(\beta+\varepsilon)}
 \end{aligned}
 \end{equation}
 
 \begin{equation}
-\overline{x_{E}}[(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon-(\beta+\varepsilon)p\varepsilon]=(1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)
+\begin{aligned}[t]
+& \overline{x_{E}}\left[(\beta+\varepsilon)(\alpha+\varepsilon)-(\alpha+\varepsilon)(1-p)\varepsilon-(\beta+\varepsilon)p\varepsilon\right]\\
+= & (1-p)\beta N(\alpha+\varepsilon)+p\alpha L(\beta+\varepsilon)
+\end{aligned}
 \end{equation}
 
 \begin{equation}
@@ -513,15 +519,12 @@ parameter, according to the following dependence on \emph{E:}
 \begin{equation}
 x_{i}^{O^{\prime}}=\frac{2x_{i}^{O}}{(1+e^{k_{O}E})}\label{eq:Speaking rate transform-1}
 \end{equation}
-
 \begin{equation}
 x_{i}^{V^{\prime}}=\frac{2x_{i}^{V}}{(1+e^{-k_{V}E})}\label{eq:Speaking rate transform-1-1}
 \end{equation}
-
 \begin{equation}
 x_{i}^{N^\prime}=\frac{2x_{i}^{N}}{(1+e^{-k_{N}E})}\label{eq:Speaking rate transform-1-1-1}
 \end{equation}
-
 \end{itemize}
 For these simulations all gestures are set to the same elasticity
 ($k_{O}=k_{N}=k_{V}=1$). 
@@ -537,7 +540,6 @@ or to exceed 500 ms
 \section{No-Phoneme Model}
 The \isi{fluency} attractor affects overlap duration according to the following
 formula:
-
 \begin{equation}
 x_{i}^{O^{\prime}}=x_{i}^{O}+\beta(T-x_{i}^{O})\label{eq:Frequency attractor-1}
 \end{equation}

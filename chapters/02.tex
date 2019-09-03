@@ -184,7 +184,7 @@ following: a context-free process; and two context-dependent processes,
 one gradient, and one categorical. For all of the three basic models,
 a \isi{production} \isi{bias}, \emph{B}, will be implemented for a given token
 \emph{i}, as a fixed percentage reduction ($\alpha$) in the value
-of \emph{$x_{i}$} along dimension \emph{x}. See Eq.(\ref{eq:Production Bias}).\footnote{The \isi{production} \isi{bias} in \citet{Pierrehumbert2000} is a constant that
+of \emph{$x_{i}$} along dimension \emph{x}. See Eq. (\ref{eq:Production Bias}).\footnote{The \isi{production} \isi{bias} in \citet{Pierrehumbert2000} is a constant that
 applies regardless of the current token value. Making the \isi{bias} proportional
 results in less reduction for tokens that already have small values, thus
 fixing the percentage of reduction, rather than the absolute value,
@@ -197,15 +197,15 @@ back to the cloud from which it was originally drawn. It will be useful
 to express the value of a given token on any iteration as a function
 of the original non-biased token that gave rise to it. For one such
 original token, $x_{i}$, we can label its biased daughter as $x_{i(+1)}$,
-and calculate its biased value to be $x_{i}\left(1-\alpha\right)$
+and calculate its biased value to be $x_{i}(1-\alpha)$
 along dimension \emph{x}. If, on some subsequent iteration, this daughter
 token $x_{i(+1)}$ is chosen for \isi{production}, it will be subject to
 the same biasing force, resulting in the granddaughter, $x_{i(+2)}$,
-with value $x_{i(+2)}=x_{i(+1)}\left(1-\alpha\right)=x_{i}\left(1-\alpha\right)^{2}$.
+with value $x_{i(+2)}=x_{i(+1)}(1-\alpha)=x_{i}(1-\alpha)^{2}$.
 Proceeding to the general case, we can express the value of any token,
 on any given model iteration, as a function of the value of its originator
 token ($x_{o}$), and the number of generations, \emph{n}, by which
-the current token is removed from that originator. See Eq.(~\ref{eq:linear bias}). 
+the current token is removed from that originator. See Eq. (\ref{eq:linear bias}). 
 \begin{equation}
 x_{o(+n)}=x_{o}\left(1-\alpha\right)^{n}\label{eq:linear bias}
 \end{equation}
