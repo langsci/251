@@ -1,2 +1,70 @@
-subject terms to index
-oneperline
+actuation 
+allophone
+allophonic
+allophony
+articulator
+articulatory
+Attractor
+bias
+context mismatch
+contrast maintenance
+decay
+entrenchment
+equilibrium
+exemplar
+fluency 
+frequency 
+functional load
+gestural
+gestural score 
+inertia
+inertial
+iterative model
+iterativity
+length 
+lengthening
+lenition
+memory decay
+misarticulation
+misparsing
+misperception
+nasality
+nasalization
+nasalize
+nasal place assimilation
+normalization
+normalize
+palatalization
+parse
+parsing
+perception
+perception-production loop
+perception-to-production mapping
+phoneme
+phoneme genesis
+phoneme merger
+phoneme split
+phonetic
+phonological
+place assimilation
+process model
+production 
+resting activation
+soft target
+speaking rate
+state model
+sub-lexical 
+sub-phonemic 
+synchronic
+synchronic variation
+target
+tongue body
+tongue tip
+unnormalized
+velar
+velar palatalization
+velum
+voiced
+voiceless
+vowel nasality
+vowel nasalization
