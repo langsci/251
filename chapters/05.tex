@@ -95,7 +95,7 @@ was produced adjacent to a nasal consonant, transforming from completely
 oral ($[-nasal]$), to completely nasal ($[+nasal${]}). This simulation
 was useful for illustrating the \isi{context mismatch} that would result
 from nasalized tokens being produced in a non-nasal context (which
-occurs whether \isi{nasality} is considered binary or not). Our current
+occurs\linebreak whether \isi{nasality} is considered binary or not). Our current
 purpose, however, is to consider how an \isi{articulatory} phenomenon like
 \isi{nasality} could be modeled iteratively with the classic perception-\isi{production}
 loop. 
@@ -141,7 +141,7 @@ movements (e.g. begin movement of \isi{tongue tip} at midpoint of open
 glottis gesture). \figref{fig:Normal nasalization} depicts a \isi{gestural}
 score for nasal coarticulation, based on the specific sequence {/æm/}.
 Time is represented along the x-axis, and the active articulators
-are shown on the y-axis (TB=Tongue Body; VEL=\isi{velum}). The box adjacent
+are shown on the y-axis ({\scshape tb}\,=\,Tongue Body; {\scshape vel}\,=\,\isi{velum}). The box adjacent
 to each active \isi{articulator} represents the time span during which that
 \isi{articulator} is activated: gradually moving towards it \isi{target} position,
 then away to a subsequent \isi{target}, or resting state. The interval during
@@ -184,7 +184,7 @@ Note that, despite the fact that the \isi{nasalization} is now a property
 of the vowel itself, the same two \isi{articulatory} gestures are still
 required in \isi{production}.
 
-At some still later model cycle, when the token represented in (\ref{fig:nasalized vowel})
+At some still later model cycle, when the token represented in \figref{fig:nasalized vowel}
 is chosen for \isi{production} in the identical nasal context, the combined
 \isi{articulatory} score is realized as \figref{fig:extra nasalization}.
 Under error-free \isi{perception} and \isi{production}, the \isi{velum} gesture associated
@@ -256,13 +256,14 @@ the \isi{target} trajectories for each segment in isolation).
 
 \caption{Coarticulation involving the same articulator. The dark solid lines
 represent the trajectories of each segment in isolation. The dotted
-line represents the actual trajectory. The Tongue Body (TB) is taken
+line represents the actual trajectory. The Tongue Body (\textsc{tb}) is taken
 to start and finish in a resting position in between the two targets. }
 \end{figure}
 
-We will take the acoustic counterpart to this \isi{production} token to
-correspond to a sequence of partially palatalized \isi{velar} and high front vowel, {[kʲ]}, {[i]}. The \isi{articulatory} representation associated with the acoustic
-representation {/kʲ/} contains a TB gesture located at the
+We will take the acoustic counterpart to this \isi{production} token to\largerpage
+correspond to a sequence of partially palatalized \isi{velar} and high front vowel, 
+{[kʲ]}, {[i]}. The \isi{articulatory} representation associated with the acoustic
+representation {/kʲ/} contains a \textsc{tb} gesture located at the
 minimum of the dotted curve in \figref{fig:/k+i}. On a subsequent
 \isi{production} cycle in which this token is produced in the context of
 a following {/i/} ({/kʲ+i/}), the “palatalizing
@@ -303,7 +304,7 @@ perception token {[}{kʲi}{]}}
 \end{figure}
 
 
-\section{\label{subsec:Misperception-=000026-Misarticulation}Misperception \& misarticulation}
+\section{\label{subsec:Misperception-=000026-Misarticulation}Misperception \& misarticulation}\largerpage
 
 A well-established tradition in laboratory phonology attributes \isi{phonetic}
 and \isi{phonological} sound change to mishearing and misspeaking on the
@@ -322,7 +323,7 @@ discrepancies between speaker and listener are more common, and the
 rarity of language-wide change is attributed to the listener's access
 to other sources of information about the ``correct'' form of a word
 (and/or the low likelihood of other speakers adopting and spreading
-an individual's novel variant (e.g. \citealt{Ohala1980})). 
+an individual's novel variant, e.g. \citealt{Ohala1980}). 
 
 Perception biases emerge when segment \emph{x} is more likely to be
 misheard as segment \emph{y}, than segment \emph{y} to be misheard
@@ -340,7 +341,7 @@ used in \isi{perception} and \isi{production}. However, this mapping is mediated
 by the distributed nature of the representations (over a network of
 neurons), and the fact that neurons are ``tuned'' by experienced input,
 via a non-linear activation function. } For example, the model in \citet{wedel2017category} (also described
-in \citet{Blevins2009}) is driven by \isi{misperception} error (or “variant
+in \citealt{Blevins2009}) is driven by \isi{misperception} error (or “variant
 trading”); this occurs as a binary decision between neighboring
 lexical categories. As already discussed, \citet{Garrett2013} implement
 an all-or-nothing \isi{normalization} mechanism.\footnote{Although they make an explicit distinction between a word-level perceptual
@@ -358,7 +359,11 @@ uses a bi-directional \isi{misperception} term in a model of \isi{velar palatali
 but \isi{misperception} only applies to feature \isi{parsing}, and is segment
 preserving. 
 
-In the next chapter a new model of \isi{vowel nasalization} is developed,
+In the next chapter a new model of \isi{vowel nasalization} is developed,\largerpage
 guided by the goal of avoiding the theoretical and implementational
 pitfalls laid out in this, and preceding, chapters. This model will
-contain an explicit listener analysis stage in which each token is parsed into its constituent units and the number of possible units is not fixed. Neither \isi{misparsing} nor multiple processing modes is required because the input is not assumed to come pre-segmented at the \isi{phoneme} level. Therefore, surface variation is directly reflected in underlying variation and change in one leads to change in the other.
+contain an explicit listener analysis stage in which each token is parsed into its 
+constituent units and the number of possible units is not fixed. Neither \isi{misparsing} 
+nor multiple processing modes is required because the input is not assumed to come pre-segmented 
+at the \isi{phoneme} level. Therefore, surface variation is directly reflected in underlying 
+variation and change in one leads to change in the other.

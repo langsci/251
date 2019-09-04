@@ -342,7 +342,7 @@ originating category.
 Model 2 implements a gradient \isi{production} \isi{bias}, similar to the one
 used in Model 1, but with an increasing, rather than decreasing, function
 of $x$. On each iteration, the randomly selected token has probability
-\emph{p} (< 0.5) of increasing by a fixed percentage ($\alpha$) of
+\emph{p} ($< 0.5$) of increasing by a fixed percentage ($\alpha$) of
 its current value. As before, the category is initialized by sampling
 from a normal distribution, and all tokens begin with non-biased values.
 Because there is only one cloud in \isi{perception}, the only time a difference
@@ -405,7 +405,7 @@ context.}
 
 As expected, the same unboundedness problem arises as was seen in
 Model 1. With the addition of a threshold (ceiling or floor value
-along \emph{x}) the sub-distributions merge, neutralizing the difference
+along \emph{x}) the sub-dis\-tri\-bu\-tions merge, neutralizing the difference
 between biased and non-biased contexts.\footnote{\citet{DBLP:journals/corr/Tupper14a} attributes a merged outcome
 such as this to perfect categorization accuracy, i.e., failure to
 discard ambiguous tokens. } It will also be shown that keeping all tokens in the same category,
